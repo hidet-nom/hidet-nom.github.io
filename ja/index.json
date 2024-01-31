@@ -39,7 +39,7 @@
 	"title": "MetaDefender Coreの管理",
 	"tags": [],
 	"description": "",
-	"content": "この章では、前章でインストールしたMetaDefender Coreの設定変更や管理を行います。\n1-3-1. MetaDefender Coreの管理 Webブラウザ上のMetaDefender Core管理コンソールで「Get Started」をクリックします。 右上「Sign in」をクリックします。 1.「ユーザ」「パスワード」を入力し、「Signin」をクリックします。 ログインに必要な情報 内容 ユーザ opswat パスワード Opswat!23 1.「Product Management Enrollment」が表示される場合は「Do not show this message at startup」チェック後、画面右上の「X」をクリックします。 左ペイン「Settings」「License」タブをクリックします。 例として下図ではライセンス有効期限が2023年12月31日まで。 MetaDefender Core for Windows 評価版、Metascan(マルチスキャン)8エンジン、Deep CDR(ファイル無害化)が有効であることが確認できます。 左ペイン「Inventory」を展開し「Modules」をクリックします。 各エンジンが最新版にアップデートされていること(インジケーターが緑)が確認できます。 1-3-2. ファイル無害化機能(Deep CDR)の有効化 左ペイン「Inventory」を展開し「Modules」をクリックします。 Deep CDRが最新版にアップデートされていること(インジケーターが緑)を確認します。 左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「File process」をクリックします。 「Deep CDR」タブをクリックします。その後、「Enable」をクリックします。 「Deep CDR is enabled」と表示されていることを確認し、下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。 「Enable for all file types」をチェックし、「OK」をクリックします。 画面右上の、「Save changes」をクリックします。 "
+	"content": "この章では、前章でインストールしたMetaDefender Coreの設定変更や管理を行います。\n1-3-1. MetaDefender Coreの管理 Webブラウザ上のMetaDefender Core管理コンソールで「Get Started」をクリックします。 右上「Sign in」をクリックします。 1.「ユーザ」「パスワード」を入力し、「Signin」をクリックします。 ログインに必要な情報 内容 ユーザ opswat パスワード Opswat!23 1.「Product Management Enrollment」が表示される場合は「Do not show this message at startup」チェック後、画面右上の「X」をクリックします。 左ペイン「Settings」「License」タブをクリックします。 例として下図ではライセンス有効期限が2023年12月31日まで。 MetaDefender Core for Windows 評価版、Metascan(マルチスキャン)8エンジン、Deep CDR(ファイル無害化)が有効であることが確認できます。 左ペイン「Inventory」を展開し「Modules」をクリックします。 各エンジンが最新版にアップデートされていること(インジケーターが緑)が確認できます。すべてのインジケーターが緑になるまで数分かかる場合があります。 1-3-2. ファイル無害化機能(Deep CDR)の有効化 左ペイン「Inventory」を展開し「Modules」をクリックします。 Deep CDRが最新版にアップデートされていること(インジケーターが緑)を確認します。 左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「File process」をクリックします。 「Deep CDR」タブをクリックします。その後、「Enable」をクリックします。 「Deep CDR is enabled」と表示されていることを確認し、下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。 「Enable for all file types」をチェックし、「OK」をクリックします。 画面右上の、「Save changes」をクリックします。 "
 },
 {
 	"uri": "/ja/lab1/step4.html",
@@ -47,6 +47,13 @@
 	"tags": [],
 	"description": "",
 	"content": "この章では、MetaDefender Coreへファイルを送信し8エンジンによるマルチスキャンやDeep CDR(ファイル無害化)を行います。\n1-4-1. ファイル処理の実行 ファイルエクスプローラで「C:\\OPSWAT_Training\\demo files」フォルダを開きます。 「demo.pdf」をMetaDefender CoreのProcess a fileへドラッグ\u0026amp;ドロップします。その後、「Process」をクリックします。 レポート内の「MetaScan™」をクリックします。 これは8つのエンジンでスキャンした結果、マルウェアやウィルスに感染してないことを示しています。「Deep CDR」をクリックします。 これは無害化処理の一つとしてハイパーリンクを1個削除したことを示しています。右上の「Download processed file」クリックします。 無害化処理等が行われたファイルをダウンロードし、開きます。 無害化処理(Deep CDR)によりハイパーリンクが削除されたため「www.opswatdemo.com」をクリックしてもリダイレクトされません。 Chromeブラウザでオリジナルファイル「file:///C:/OPSWAT_Training/demo%20files/demo.pdf」を開き「www.opswatdemo.com」をクリックすると「http://malware-click.in/」へリダイレクトされてしまいます。 "
+},
+{
+	"uri": "/ja/lab1/step5.html",
+	"title": "MetaDefender Core のアップデート",
+	"tags": [],
+	"description": "",
+	"content": "この章では、MetaDefender Core 5.7.1 から 5.8.0 への上書きアップデートを実施します。\n1-5-1. 5.8.0 への上書きアップデート ファイルエクスプローラで「C:\\OPSWAT_Training」フォルダを開きます。 「ometascan-5.8.0-1-x64.msi」を開きます。「Next」をクリックします。 「I accept the terms in the License Agreement」を選択し「Next」をクリックします。 デフォルト値のまま「Next」をクリックします。 「Standalone」をクリックします。 チェックを付けずに「Next」をクリックします。 チェックを付けずに「Install」をクリックします。 数分程度待ちます。 この画面が表示されたら「Finish」をクリックします。 "
 },
 {
 	"uri": "/ja/categories.html",
