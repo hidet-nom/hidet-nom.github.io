@@ -1,0 +1,64 @@
+[
+{
+	"uri": "/ja/",
+	"title": "MetaDefender Core ハンズオン",
+	"tags": [],
+	"description": "",
+	"content": "0-1. 本ドキュメントの位置づけ MetaDefender Core の導入/構築を検討している方向けハンズオンの解説資料です。本書の記載範囲については、本ガイドの範囲 に記載しています。\n0-2. 本ガイドの範囲 本ワークショップでは、以下のハンズオンを実施します。\nMetaDefender Core: OPSWATが提供するファイルセキュリティ「MetaDefender Core」について、インストール、構築、管理などの操作を体験いただくハンズオンです。\n0-3. ハンズオンの前提 今回のハンズオンでは、Amazon WorkSpaces上のWindows Server 2019 仮想デスクトップ上で作業を実施します。 Amazon WorkSpacesに接続するための、端末、ブラウザ、インターネット接続環境をご用意ください。\n0-4. 本書の対象者 本書は、MetaDefender Core環境の利用を検討いただける方を想定して作成しています。MetaDefender Coreを知らない方、MetaDefender Coreを触ったことがない方向けの入門レベルです。\n"
+},
+{
+	"uri": "/ja/lab1/step0.html",
+	"title": "Amazon WorkSpaces への接続",
+	"tags": [],
+	"description": "",
+	"content": "この章では、作業環境となるAmazon WorkSpacesへ接続します。\n1-0-1. Amazon WorkSpacesへのログイン 払い出されたユーザIDを使用してWorkSpaces(Windows 2019 仮想デスクトップ)環境に接続します。\nトレーニング用PCのブラウザを起動し、WorkSpacesにアクセスします。\n「Registration code」に「wsnrt+PZRDYF」を入力し、「Register」をクリックします。 「Sign in」をクリックします。 「ユーザー」には、割り当てられた「ユーザ名」「パスワード」を入力し、「Sign in」をクリックします。 ログインに必要な情報 内容 ユーザー opswatXX (XXは割当番号) パスワード Opswat!XX (XXは割当番号) 下のような画面が表示されればトレーニング用仮想デスクトップへの接続は完了です。 "
+},
+{
+	"uri": "/ja/lab1.html",
+	"title": "MetaDefender Core",
+	"tags": [],
+	"description": "",
+	"content": "この章では、Amazon WorkSpaces (Windows 2019 仮想デスクトップ)上に MetaDefender Core をインストールします。\n1-1. MetaDefender Coreのインストール\n1-2. MetaDefender Coreの初期設定\n1-3. MetaDefender Coreへのファイル処理送信(マルチスキャンおよび無害化(Deep CDR))\n今回作成する環境のイメージは以下の通りです。 "
+},
+{
+	"uri": "/ja/lab1/step1.html",
+	"title": "MetaDefender Coreのインストール",
+	"tags": [],
+	"description": "",
+	"content": "この章では、WorkSpaces(Windows 2019 仮想デスクトップ)上にMetaDefender Coreをインストールします。\n1-1-1. MetaDefender Core のインストール 前の章で接続したトレーニング用仮想デスクトップにアクセスします。 ファイルエクスプローラ等から「C:\\OPSWAT_Training\\ometascan-5.7.1-1-x64.msi」を起動します。 「Next」をクリックします。 「I accept the terms in the License Agreement」を選択し「Next」をクリックします。 「Simple」をクリックします。 デフォルト値のまま「Next」をクリックします。 「Standalone」をクリックします。 デフォルト値のまま「Password」および「Confirm Password」に「Opswat!23」を入力し、「Next」をクリックします。 「Install」をクリックします。 「はい」をクリックします。次の手順まで数分かかります。 「Finish」をクリックします。 1-1-2. MetaDefender Core の初期設定 MetaDefender Core の初期設定を行います。\nデスクトップ上のMetaDefender Coreショートカットを起動します。 "
+},
+{
+	"uri": "/ja/lab1/step2.html",
+	"title": "MetaDefender Core の初期設定",
+	"tags": [],
+	"description": "",
+	"content": "1-2-1. MetaDefender Core の初期設定 この章では、MetaDefender Core の初期設定を行います。\nデスクトップ上のMetaDefender Coreショートカットを起動します。 「Google Chrome」選択し「常にこのアプリを使う」にチェックして「OK」 をクリックします。 「Start」 をクリックします。 「I accept the terms in the License Agreement」にチェックし「Continue」 をクリックします。 下の様に入力後「Create」をクリックします。 項目 入力内容 備考 User name opswat Display name OPSWAT Password Opswat!23 Confirm password Opswat!23 Email training@opswat.local ライセンスアクティベートを実施します。「Online activation」選択後、「Activation key」を下の様に入力後「Activate」をクリックします。 項目 入力内容 備考 Activation key sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd 「Skip」 をクリックします。 「Yes」 をクリックします。 「Finish」 をクリックします。 これでMetaDefender Core の初期設定は完了です。\n"
+},
+{
+	"uri": "/ja/lab1/step3.html",
+	"title": "MetaDefender Coreの管理",
+	"tags": [],
+	"description": "",
+	"content": "この章では、前章でインストールしたMetaDefender Coreの設定変更や管理を行います。\n1-3-1. MetaDefender Coreの管理 Webブラウザ上のMetaDefender Core管理コンソールで「Get Started」をクリックします。 右上「Sign in」をクリックします。 1.「ユーザ」「パスワード」を入力し、「Signin」をクリックします。 ログインに必要な情報 内容 ユーザ opswat パスワード Opswat!23 1.「Product Management Enrollment」が表示される場合は「Do not show this message at startup」チェック後、画面右上の「X」をクリックします。 左ペイン「Settings」「License」タブをクリックします。 例として下図ではライセンス有効期限が2023年12月31日まで。 MetaDefender Core for Windows 評価版、Metascan(マルチスキャン)8エンジン、Deep CDR(ファイル無害化)が有効であることが確認できます。 左ペイン「Inventory」を展開し「Modules」をクリックします。 各エンジンが最新版にアップデートされていること(インジケーターが緑)が確認できます。 1-3-2. ファイル無害化機能(Deep CDR)の有効化 左ペイン「Inventory」を展開し「Modules」をクリックします。 Deep CDRが最新版にアップデートされていること(インジケーターが緑)を確認します。 左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「File process」をクリックします。 「Deep CDR」タブをクリックします。その後、「Enable」をクリックします。 「Deep CDR is enabled」と表示されていることを確認し、下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。 「Enable for all file types」をチェックし、「OK」をクリックします。 画面右上の、「Save changes」をクリックします。 "
+},
+{
+	"uri": "/ja/lab1/step4.html",
+	"title": "ファイル処理の実行",
+	"tags": [],
+	"description": "",
+	"content": "この章では、MetaDefender Coreへファイルを送信し8エンジンによるマルチスキャンやDeep CDR(ファイル無害化)を行います。\n1-4-1. ファイル処理の実行 ファイルエクスプローラで「C:\\OPSWAT_Training\\demo files」フォルダを開きます。 「demo.pdf」をMetaDefender CoreのProcess a fileへドラッグ\u0026amp;ドロップします。その後、「Process」をクリックします。 レポート内の「MetaScan™」をクリックします。 これは8つのエンジンでスキャンした結果、マルウェアやウィルスに感染してないことを示しています。「Deep CDR」をクリックします。 これは無害化処理の一つとしてハイパーリンクを1個削除したことを示しています。右上の「Download processed file」クリックします。 無害化処理等が行われたファイルをダウンロードし、開きます。 無害化処理(Deep CDR)によりハイパーリンクが削除されたため「www.opswatdemo.com」をクリックしてもリダイレクトされません。 Chromeブラウザでオリジナルファイル「file:///C:/OPSWAT_Training/demo%20files/demo.pdf」を開き「www.opswatdemo.com」をクリックすると「http://malware-click.in/」へリダイレクトされてしまいます。 "
+},
+{
+	"uri": "/ja/categories.html",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "/ja/tags.html",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]
