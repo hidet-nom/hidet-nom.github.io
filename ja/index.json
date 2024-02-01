@@ -32,7 +32,7 @@
 	"title": "MetaDefender Core の初期設定",
 	"tags": [],
 	"description": "",
-	"content": "1-2-1. MetaDefender Core の初期設定 この章では、MetaDefender Core の初期設定を行います。\nデスクトップ上のMetaDefender Coreショートカットを右クリックし、「プログラムから開く」を選択します。 「Google Chrome」選択し「常にこのアプリを使う」にチェックして「OK」 をクリックします。 「Start」 をクリックします。 「I accept the terms in the License Agreement」にチェックし「Continue」 をクリックします。 下の表示従いに入力後「Create」をクリックします。 項目 入力内容 備考 User name opswat Display name OPSWAT Password Opswat!23 Confirm password Opswat!23 Email training@opswat.local ライセンスアクティベートを実施します。「Online activation」選択後、「Activation key」を下の様に入力後「Activate」をクリックします。 項目 入力内容 備考 Activation key sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd 「Skip」 をクリックします。 「Yes」 をクリックします。 「Finish」 をクリックします。 これで「1-2-1. MetaDefender Core の初期設定」の初期設定は完了です。\n"
+	"content": "1-2-1. MetaDefender Core の初期設定 この章では、MetaDefender Core の初期設定を行います。\nデスクトップ上のMetaDefender Coreショートカットを右クリックし、「プログラムから開く」を選択します。 「Google Chrome」選択し「常にこのアプリを使う」にチェックして「OK」 をクリックします。 このような画面が表示されたら「ログインしない」 をクリックします。 「Start」 をクリックします。 「I accept the terms in the License Agreement」にチェックし「Continue」 をクリックします。 下の表示従いに入力後「Create」をクリックします。 項目 入力内容 備考 User name opswat Display name OPSWAT Password Opswat!23 Confirm password Opswat!23 Email training@opswat.local ライセンスアクティベートを実施します。「Online activation」選択後、「Activation key」を下の様に入力後「Activate」をクリックします。 項目 入力内容 備考 Activation key sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd 「Skip」 をクリックします。 「Yes」 をクリックします。 「Finish」 をクリックします。 これで「1-2-1. MetaDefender Core の初期設定」の初期設定は完了です。\n"
 },
 {
 	"uri": "/ja/lab1/step3.html",
@@ -46,7 +46,7 @@
 	"title": "ファイル処理の実行",
 	"tags": [],
 	"description": "",
-	"content": "この章では、MetaDefender Coreへファイルを送信し8エンジンによるマルチスキャンやDeep CDR(ファイル無害化)を行います。\n1-4-1. ファイル処理の実行 ファイルエクスプローラで「C:\\OPSWAT_Training\\demo files」フォルダを開きます。 「demo.pdf」をMetaDefender CoreのProcess a fileへドラッグ\u0026amp;ドロップします。その後、「Process」をクリックします。 レポート内の「MetaScan™」をクリックします。 これは8つのエンジンでスキャンした結果、マルウェアやウィルスに感染してないことを示しています。「Deep CDR」をクリックします。 [1]hyperlinkを展開します。これは無害化処理の一つとしてハイパーリンクを1個削除したことを示しています。その後、「View content」をクリックします。 ハイパーリンク「http://malware-click.in/」を削除したことを示しています。確認後、右上の「Download processed file」クリックします。 無害化処理等が行われたファイルをダウンロードし、開きます。 無害化処理(Deep CDR)によりハイパーリンクが削除されたため「www.opswatdemo.com」をクリックしてもリダイレクトされません。 Chromeブラウザでオリジナルファイル「file:///C:/OPSWAT_Training/demo%20files/demo.pdf」を開き「www.opswatdemo.com」をクリックすると「http://malware-click.in/」へリダイレクトされてしまいます。 "
+	"content": "この章では、MetaDefender Coreへファイルを送信し8エンジンによるマルチスキャンやDeep CDR(ファイル無害化)を行います。\n1-4-1. ファイル処理の実行 ファイルエクスプローラで「C:\\OPSWAT_Training\\demo files」フォルダを開きます。 「demo.pdf」をMetaDefender CoreのProcess a fileへドラッグ\u0026amp;ドロップします。その後、「Process」をクリックします。 レポート内の「MetaScan™」をクリックします。 これは8つのエンジンでスキャンした結果、マルウェアやウィルスに感染してないことを示しています。「Deep CDR」をクリックします。 [1]hyperlinkを展開します。これは無害化処理の一つとしてハイパーリンクを1個削除したことを示しています。その後、「View content」をクリックします。 ハイパーリンク「http://malware-click.in/」を削除したことを示しています。確認後、右上の「Download processed file」クリックします。 無害化処理等が行われたファイルをダウンロードし、開きます。 無害化処理(Deep CDR)によりハイパーリンクが削除されたため「www.opswatdemo.com」をクリックしてもリダイレクトされません。 Chromeブラウザでオリジナルファイル「file:///C:/OPSWAT_Training/demo%20files/demo.pdf」を開き「www.opswatdemo.com」をクリックすると「http://malware-click.in/」へリダイレクトされてしまいます。 以上で「1-4-1. ファイル処理の実行」を完了します。\n"
 },
 {
 	"uri": "/ja/lab1/step5.html",
