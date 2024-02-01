@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 <link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 
-  <title>ファイル処理の実行 :: MetaDefender Core ハンズオン</title>
+  <title>【オプション】MetaDefender Core アップデートの確認 :: MetaDefender Core ハンズオン</title>
 
   
   <link href="/css/nucleus.css" rel="stylesheet">
@@ -45,7 +45,7 @@
   
 </head>
 
-<body class="" data-url="/ja/lab1/step4.html">
+<body class="" data-url="/ja/lab1/step6.html">
   <nav id="sidebar" class="">
 
 
@@ -214,7 +214,7 @@
     
     <li data-nav-id="/ja/lab1/step4.html" title="ファイル処理の実行" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/ja/lab1/step4.html">
@@ -262,7 +262,7 @@
     
     <li data-nav-id="/ja/lab1/step6.html" title="【オプション】MetaDefender Core アップデートの確認" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/ja/lab1/step6.html">
@@ -336,7 +336,7 @@
           
           
           
-          <a href='/ja/'>MetaDefender Core ハンズオン</a> > <a href='/ja/lab1.html'>MetaDefender Core</a> > ファイル処理の実行
+          <a href='/ja/'>MetaDefender Core ハンズオン</a> > <a href='/ja/lab1.html'>MetaDefender Core</a> > 【オプション】MetaDefender Core アップデートの確認
           
           
           
@@ -352,7 +352,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1-4-1-ファイル処理の実行">1-4-1. ファイル処理の実行</a></li>
+        <li><a href="#1-6-1-metadefender-core-管理コンソールでのアップデート確認">1-6-1. MetaDefender Core 管理コンソールでのアップデート確認</a></li>
       </ul>
     </li>
   </ul>
@@ -367,35 +367,49 @@
 
       
         <div id="body-inner">
-          <h1>ファイル処理の実行</h1>
+          <h1>【オプション】MetaDefender Core アップデートの確認</h1>
           
           
 
 
 
-	<p>この章では、MetaDefender Coreへファイルを送信し8エンジンによるマルチスキャンやDeep CDR(ファイル無害化)を行います。</p>
-<h3 id="1-4-1-ファイル処理の実行">1-4-1. ファイル処理の実行</h3>
+	<p>この章では、MetaDefender Core 5.7.1 から 5.8.0 への上書きアップデートされたかを確認します。</p>
+<h3 id="1-6-1-metadefender-core-管理コンソールでのアップデート確認">1-6-1. MetaDefender Core 管理コンソールでのアップデート確認</h3>
 <ol>
-<li>ファイルエクスプローラで「C:\OPSWAT_Training\demo files」フォルダを開きます。
-<img src="/images/lab1/1-1-4_mdc01.png" alt=""></li>
-<li>「demo.pdf」をMetaDefender CoreのProcess a fileへドラッグ&amp;ドロップします。その後、「Process」をクリックします。
-<img src="/images/lab1/1-1-4_mdc02-2.png" alt=""></li>
-<li>レポート内の「MetaScan™」をクリックします。
-<img src="/images/lab1/1-1-4_mdc03-2.png" alt=""></li>
-<li>これは8つのエンジンでスキャンした結果、マルウェアやウィルスに感染してないことを示しています。「Deep CDR」をクリックします。
-<img src="/images/lab1/1-1-4_mdc04-2.png" alt=""></li>
-<li>[1]hyperlinkを展開します。これは無害化処理の一つとしてハイパーリンクを1個削除したことを示しています。その後、「View content」をクリックします。
-<img src="/images/lab1/1-1-4_mdc05-3.png" alt=""></li>
-<li>ハイパーリンク「http://malware-click.in/」を削除したことを示しています。確認後、右上の「Download processed file」クリックします。
-<img src="/images/lab1/1-1-4_mdc05-4.png" alt=""></li>
-<li>無害化処理等が行われたファイルをダウンロードし、開きます。
-<img src="/images/lab1/1-1-4_mdc06.png" alt=""></li>
-<li>無害化処理(Deep CDR)によりハイパーリンクが削除されたため「www.opswatdemo.com」をクリックしてもリダイレクトされません。
-<img src="/images/lab1/1-1-4_mdc07-2.png" alt=""></li>
-<li>Chromeブラウザでオリジナルファイル「file:///C:/OPSWAT_Training/demo%20files/demo.pdf」を開き「www.opswatdemo.com」をクリックすると「http://malware-click.in/」へリダイレクトされてしまいます。
-<img src="/images/lab1/1-1-4_mdc08-2.png" alt="">
-<img src="/images/lab1/1-1-4_mdc09.png" alt=""></li>
+<li>
+<p>デスクトップ上の「MetaDefender Core」ショートカットをダブルクリックします。</p>
+</li>
+<li>
+<p>右上「Sign in」をクリックします。
+<img src="/images/lab1/1-1-3_mdc02.png" alt="">
+1.「ユーザ」「パスワード」を入力し、「Sign in」をクリックします。
+<img src="/images/lab1/1-1-3_mdc03.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>ログインに必要な情報</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ユーザ</td>
+<td>opswat</td>
+</tr>
+<tr>
+<td>パスワード</td>
+<td>Opswat!23</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>左ペイン「Settings」「About」タブをクリックします。
+MetaDefender Core のバージョンが5.8.0であることが確認できます。
+<img src="/images/lab1/1-1-6_mdc01.PNG" alt=""></p>
+</li>
 </ol>
+<p>以上で「1-6-1. MetaDefender Core 管理コンソールでのアップデート確認」は完了です。</p>
 
 
 
@@ -518,6 +532,21 @@
             
                 
                     
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -535,24 +564,6 @@
             
                 
                     
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
                     
                 
                 
@@ -577,10 +588,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ja/lab1/step3.html" title="MetaDefender Coreの管理"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ja/lab1/step5.html" title="【オプション】MetaDefender Core のアップデート"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/ja/lab1/step5.html" title="【オプション】MetaDefender Core のアップデート" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/ja/lab1.html" title="MetaDefender Core" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
