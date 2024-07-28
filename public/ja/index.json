@@ -11,7 +11,7 @@
 	"title": "Amazon WorkSpaces への接続",
 	"tags": [],
 	"description": "",
-	"content": "この章では、作業環境となるAmazon WorkSpacesへ接続します。\n1-0-1. Amazon WorkSpacesへのログイン 払い出されたユーザIDを使用してWorkSpaces(Windows 2022 仮想デスクトップ)環境に接続します。\nトレーニング用PCのブラウザを起動し、WorkSpacesにアクセスします。\n「Registration code」に「wsnrt+GKQJSY」を入力し、「Register」をクリックします。 「Sign in」をクリックします。 「ユーザー」には、割り当てられた「ユーザ名」「パスワード」を入力し、「Sign in」をクリックします。 ログインに必要な情報 内容 ユーザー opswatXX (XXは割当番号) パスワード Opswat!XX (XXは割当番号) 下のような画面が表示されればトレーニング用仮想デスクトップへの接続は完了です。 "
+	"content": "この章では、作業環境となるAmazon WorkSpacesへ接続します。\n1-0-1. Amazon WorkSpacesへのログイン 払い出されたユーザIDを使用してWorkSpaces(Windows 2022 仮想デスクトップ)環境に接続します。\nトレーニング用PCのブラウザを起動し、WorkSpacesにアクセスします。\n「Registration code」に「wsnrt+W2CWM2」を入力し、「Register」をクリックします。 「Sign in」をクリックします。 「ユーザー」には、割り当てられた「ユーザ名」「パスワード」を入力し、「Sign in」をクリックします。 ログインに必要な情報 内容 ユーザー opswatXX (XXは割当番号) パスワード Opswat!XX (XXは割当番号) 下のような画面が表示されればトレーニング用仮想デスクトップへの接続は完了です。 "
 },
 {
 	"uri": "/ja/lab1.html",
@@ -70,13 +70,6 @@
 	"content": "この章では、MetaDefender Core 管理コンソール上でMFT接続用アカウントの作成を行います。\n2-2-1. MetaDefender Core 管理コンソールへのログオン、MFT接続用アカウントの作成 MetaDefender Core 管理コンソールへのログオンします。Webブラウザから「http://localhost:8008」へ接続します。 またはデスクトップショートカットの「MetaDefender Core」をダブルクリックします。 「Sign in」をクリックします。 MetaDefender Core 管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23 左ペインの「User Management」を選択し「+ Add User」をクリックします。 以下の表に従って入力し、すべて入力後「Generate」をクリック、最後に「Add」をクリックします。 項目 入力内容 備考 User directory LOCAL User name mft Display name MFT Password Opswat!23 Confirm password Opswat!23 Email training@opswat.local API key Generate をクリックすると固有キーが作成される Assign to roles Administrators 「mft」ユーザーが作成されたことを確認します。 「mft」ユーザーの「Edit」をクリックします。 「mft」ユーザーのAPIキーをコピーしておきます。この画面は開いたままにしておきます。 「2-2-1. MFT接続用アカウントの作成」はこれで完了です。\n"
 },
 {
-	"uri": "/ja/lab4/step2.html",
-	"title": "MFT接続用アカウントの作成",
-	"tags": [],
-	"description": "",
-	"content": "この章では、MetaDefender Core 管理コンソール上でMFT接続用アカウントの作成を行います。\n2-2-1. MetaDefender Core 管理コンソールへのログオン、MFT接続用アカウントの作成 MetaDefender Core 管理コンソールへのログオンします。Webブラウザから「http://localhost:8008」へ接続します。 またはデスクトップショートカットの「MetaDefender Core」をダブルクリックします。 「Sign in」をクリックします。 MetaDefender Core 管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23 左ペインの「User Management」を選択し「+ Add User」をクリックします。 以下の表に従って入力し、すべて入力後「Generate」をクリック、最後に「Add」をクリックします。 項目 入力内容 備考 User directory LOCAL User name mft Display name MFT Password Opswat!23 Confirm password Opswat!23 Email training@opswat.local API key Generate をクリックすると固有キーが作成される Assign to roles Administrators 「mft」ユーザーが作成されたことを確認します。 「mft」ユーザーの「Edit」をクリックします。 「mft」ユーザーのAPIキーをコピーしておきます。この画面は開いたままにしておきます。 「2-2-1. MFT接続用アカウントの作成」はこれで完了です。\n"
-},
-{
 	"uri": "/ja/lab2/step3.html",
 	"title": "MetaDefender Managed File Transfer (MFT) の初期設定",
 	"tags": [],
@@ -84,21 +77,7 @@
 	"content": "この章では、MetaDefender Managed File Transfer (MFT) 初期設定を行います。\n2-3-1. MetaDefender Managed File Transfer (MFT) の初期設定 デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23456 左ペインの「Settings」「License」を選択し「Activate」をクリックします。 「sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd」を入力し「Activate online」をクリックします。 このような画面になるのを確認します。 左ペインの「Settings」「Core integration」を選択し右側にある「…」「Edit MetaDefender Core Settings」をクリックします。 下の表の項目を入力し、MetaDefender CoreのMFTユーザー（「2-2-1 MFT接続用アカウントの作成」で取得した）のAPI Keyをコピーし「API Key」へ入力後、「Update」をクリックします。 項目 入力内容 備考 Address http://localhost:8008/ API Key 「2-2-1 MFT接続用アカウントの作成」で作成したmftユーザーのAPI キー User agent mft 「File Processing」が「Enabled」になったのを確認します。 左ペインの「Settings」「Language」を選択し「Japanese」を選択「Update」をクリックします。 「2-3-1. MetaDefender Managed File Transfer (MFT) 初期設定」はこれで完了です。\n"
 },
 {
-	"uri": "/ja/lab4/step3.html",
-	"title": "MetaDefender Managed File Transfer (MFT) の初期設定",
-	"tags": [],
-	"description": "",
-	"content": "この章では、MetaDefender Managed File Transfer (MFT) 初期設定を行います。\n2-3-1. MetaDefender Managed File Transfer (MFT) の初期設定 デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23456 左ペインの「Settings」「License」を選択し「Activate」をクリックします。 「sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd」を入力し「Activate online」をクリックします。 このような画面になるのを確認します。 左ペインの「Settings」「Core integration」を選択し右側にある「…」「Edit MetaDefender Core Settings」をクリックします。 下の表の項目を入力し、MetaDefender CoreのMFTユーザー（「2-2-1 MFT接続用アカウントの作成」で取得した）のAPI Keyをコピーし「API Key」へ入力後、「Update」をクリックします。 項目 入力内容 備考 Address http://localhost:8008/ API Key 「2-2-1 MFT接続用アカウントの作成」で作成したmftユーザーのAPI キー User agent mft 「File Processing」が「Enabled」になったのを確認します。 左ペインの「Settings」「Language」を選択し「Japanese」を選択「Update」をクリックします。 「2-3-1. MetaDefender Managed File Transfer (MFT) 初期設定」はこれで完了です。\n"
-},
-{
 	"uri": "/ja/lab2/step4.html",
-	"title": "MetaDefender Managed File Transfer (MFT) へのファイルアップロード",
-	"tags": [],
-	"description": "",
-	"content": "この章では、MetaDefender Managed File Transfer (MFT) へのファイルアップロードを行います。\n2-3-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23456 左ペインの「概要」「個人ファイル」を選択し「ファイルをアップロード」をクリックします。 「ファイルを追加」をクリックします。 アドレスバーに「C:\\OPSWAT_Training\\demo files」と入力し「demo.pdf」選択後「開く」をクリックします。 「アップロード」をクリックします。 状態が「スキャン中」から「無害化済み」になるまでしばらく待ちます。 ファイル名をクリックし詳細なレポートを確認します。 MetaDefender Core管理コンソールにログインし、左ペインの「History」「Processing」を選択しmftユーザーから送られてきた処理を確認します。 「2-4-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード」はこれで完了です。\n"
-},
-{
-	"uri": "/ja/lab4/step4.html",
 	"title": "MetaDefender Managed File Transfer (MFT) へのファイルアップロード",
 	"tags": [],
 	"description": "",
@@ -130,14 +109,35 @@
 	"title": "MetaDefender Managed File Transfer (MFT)",
 	"tags": [],
 	"description": "",
-	"content": "この章では、Amazon WorkSpaces (Windows 2022 仮想デスクトップ)上に MetaDefender Managed File Transfer (MFT) をインストールします。\n2-1. MetaDefender Managed File Transferのインストール\n2-2. MetaDefender Managed File Transfer接続用アカウントの作成\n2-3. MetaDefender Managed File Transferの初期設定\n2-4. MetaDefender Managed File Transferへのファイルアップロード（ファイル処理送信(マルチスキャンおよび無害化(Deep CDR)))\n今回作成する環境のイメージは以下の通りです。 "
+	"content": "この章では、Amazon WorkSpaces (Windows 2022 仮想デスクトップ)上に MetaDefender Managed File Transfer (MFT) をインストールします。\n4-1. MetaDefender Managed File Transferのインストール\n4-2. MetaDefender Managed File Transfer接続用アカウントの作成\n4-3. MetaDefender Managed File Transferの初期設定\n4-4. MetaDefender Managed File Transferへのファイルアップロード（ファイル処理送信(マルチスキャンおよび無害化(Deep CDR)))\n今回作成する環境のイメージは以下の通りです。 "
 },
 {
 	"uri": "/ja/lab4/step1.html",
 	"title": "MetaDefender Managed File Transfer (MFT) のインストール",
 	"tags": [],
 	"description": "",
-	"content": "この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Managed File Transfer (MFT) をインストールします。\n2-1-1. MetaDefender Managed File Transfer (MFT) のインストール 前の章で接続したトレーニング用仮想デスクトップにアクセスします。 ファイルエクスプローラ等から「C:\\OPSWAT_Training\\metadefender-managed-file-transfer_3.6.0.1.exe」を起動します。 「I agree to the lizense terms and conditions」にチェックし、「Install」をクリックします。 このような画面が表示されたら「はい」をクリックします。次の画面が表示されるまで数分待ちます。 「Microsoft SQL Server Express LocalDB」を選択し「Next」をクリックします。 「はい」をクリックします。 数分待った後、「Launch」をクリックします。 「Continue」をクリックします。 下の表に従って「Email」「First name」「Last name」「Username」「Password」「Confirm password」を入力し、「Create」をクリックします。 項目 入力内容 備考 Email training@opswat.local First name opswat Last name opswat Username opswat Password Opswat12345! Confirm password Opswat12345! 「4-1-1. MetaDefender Core のインストール」はこれで完了です。\n"
+	"content": "この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Managed File Transfer (MFT) をインストールします。\n4-1-1. MetaDefender Managed File Transfer (MFT) のインストール 前の章で接続したトレーニング用仮想デスクトップにアクセスします。 ファイルエクスプローラ等から「C:\\OPSWAT_Training\\metadefender-managed-file-transfer_X.X.X.X.exe」を起動します。 「I agree to the lizense terms and conditions」にチェックし、「Install」をクリックします。 このような画面が表示されたら「はい」をクリックします。次の画面が表示されるまで数分待ちます。 「Microsoft SQL Server Express LocalDB」を選択し「Next」をクリックします。 「はい」をクリックします。 数分待った後、「Launch」をクリックします。 「Continue」をクリックします。 下の表に従って「Email」「First name」「Last name」「Username」「Password」「Confirm password」を入力し、「Create」をクリックします。 項目 入力内容 備考 Email training@opswat.local First name opswat Last name opswat Username opswat Password Opswat1234567! Confirm password Opswat1234567! 「4-1-1. MetaDefender Core のインストール」はこれで完了です。\n"
+},
+{
+	"uri": "/ja/lab4/step2.html",
+	"title": "MFT接続用アカウントの作成",
+	"tags": [],
+	"description": "",
+	"content": "この章では、MetaDefender Core 管理コンソール上でMFT接続用アカウントの作成を行います。\n4-2-1. MetaDefender Core 管理コンソールへのログオン、MFT接続用アカウントの作成 MetaDefender Core 管理コンソールへのログオンします。Webブラウザから「http://localhost:8008」へ接続します。 またはデスクトップショートカットの「MetaDefender Core」をダブルクリックします。 「Sign in」をクリックします。 MetaDefender Core 管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23 左ペインの「User Management」を選択し「+ Add User」をクリックします。 以下の表に従って入力し、すべて入力後「Generate」をクリック、最後に「Add」をクリックします。 項目 入力内容 備考 User directory LOCAL User name mft Display name MFT Password Opswat!23 Confirm password Opswat!23 Email training@opswat.local API key Generate をクリックすると固有キーが作成される Assign to roles Administrators 「mft」ユーザーが作成されたことを確認します。 「mft」ユーザーの「Edit」をクリックします。 「mft」ユーザーのAPIキーをコピーしておきます。この画面は開いたままにしておきます。 「4-2-1. MFT接続用アカウントの作成」はこれで完了です。\n"
+},
+{
+	"uri": "/ja/lab4/step3.html",
+	"title": "MetaDefender Managed File Transfer (MFT) の初期設定",
+	"tags": [],
+	"description": "",
+	"content": "この章では、MetaDefender Managed File Transfer (MFT) 初期設定を行います。\n4-3-1. MetaDefender Managed File Transfer (MFT) の初期設定 デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat1234567! 左ペインの「Settings」「License」を選択し「Activate」をクリックします。 「sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd」を入力し「Activate online」をクリックします。 このような画面になるのを確認します。 左ペインの「Settings」「Core integration」を選択し右側にある「…」「Edit MetaDefender Core Settings」をクリックします。 下の表の項目を入力し、MetaDefender CoreのMFTユーザーのAPI Key「24e256a006e869beb35a2bf94a9bd491a1e4」をコピーし「API Key」へ入力後、「Update」をクリックします。 項目 入力内容 備考 Address http://demo01.opswatjapan.com:10240/ API Key 24e256a006e869beb35a2bf94a9bd491a1e4 User agent mft 「File Processing」が「Enabled」になったのを確認します。 左ペインの「Settings」「Language」を選択し「Japanese」を選択「Update」をクリックします。 「4-3-1. MetaDefender Managed File Transfer (MFT) 初期設定」はこれで完了です。\n"
+},
+{
+	"uri": "/ja/lab4/step4.html",
+	"title": "MetaDefender Managed File Transfer (MFT) へのファイルアップロード",
+	"tags": [],
+	"description": "",
+	"content": "この章では、MetaDefender Managed File Transfer (MFT) へのファイルアップロードを行います。\n4-3-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat1234567! 左ペインの「概要」「個人ファイル」を選択し「ファイルをアップロード」をクリックします。 「ファイルを追加」をクリックします。 アドレスバーに「C:\\OPSWAT_Training\\demo」と入力し「demo.pdf」選択後「開く」をクリックします。 「アップロード」をクリックします。 状態が「スキャン中」から「無害化済み」になるまでしばらく待ちます。 ファイル名をクリックし詳細なレポートを確認します。 MetaDefender Core管理コンソールにログインし、左ペインの「History」「Processing」を選択しmftユーザーから送られてきた処理を確認します。 「4-4-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード」はこれで完了です。\n"
 },
 {
 	"uri": "/ja/categories.html",
