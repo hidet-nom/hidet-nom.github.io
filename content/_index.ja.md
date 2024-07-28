@@ -19,7 +19,7 @@ MetaDefender Core の導入/構築を検討している方向けハンズオン�
 
 ### 0-3. ハンズオンの前提
 
-今回のハンズオンでは、Amazon WorkSpaces上のWindows Server 2019 仮想デスクトップ上で作業を実施します。
+今回のハンズオンでは、Amazon WorkSpaces上のWindows Server 2022 仮想デスクトップ上で作業を実施します。
 Amazon WorkSpacesに接続するための、端末、ブラウザ、インターネット接続環境をご用意ください。
 
 ----

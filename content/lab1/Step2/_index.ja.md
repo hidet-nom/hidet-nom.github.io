@@ -7,14 +7,17 @@ pre = "<b>1-2. </b>"
 ### 1-2-1. MetaDefender Core の初期設定
 この章では、MetaDefender Core の初期設定を行います。
 
-1. デスクトップ上のMetaDefender Coreショートカットを起動します。
-「Google Chrome」選択し「常にこのアプリを使う」にチェックして「OK」 をクリックします。
+1. デスクトップ上のMetaDefender Coreショートカットを右クリックし、「プログラムから開く」を選択します。
+    ![](/images/lab1/1-1-2_mdc00.png)
+1. 「Google Chrome」選択し「常にこのアプリを使う」にチェックして「OK」 をクリックします。
     ![](/images/lab1/1-1-2_mdc01.png)
+1. このような画面が表示されたら「ログインしない」 をクリックします。
+    ![](/images/lab1/1-1-2_mdc01-2.png)
 1. 「Start」 をクリックします。
     ![](/images/lab1/1-1-2_mdc02.png)
 1. 「I accept the terms in the License Agreement」にチェックし「Continue」 をクリックします。
     ![](/images/lab1/1-1-2_mdc03.png)				
-1. 下の様に入力後「Create」をクリックします。
+1. 下の表示従いに入力後「Create」をクリックします。
     ![](/images/lab1/1-1-2_mdc04.png)
     
     | 項目 | 入力内容 | 備考 |
@@ -40,4 +43,4 @@ pre = "<b>1-2. </b>"
 1. 「Finish」 をクリックします。
     ![](/images/lab1/1-1-2_mdc08.png)
 
-これでMetaDefender Core の初期設定は完了です。
+これで「1-2-1. MetaDefender Core の初期設定」の初期設定は完了です。

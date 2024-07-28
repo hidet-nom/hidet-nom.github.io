@@ -8,11 +8,11 @@ pre = "<b>1-0. </b>"
 
 ### 1-0-1. Amazon WorkSpacesへのログイン
 
-払い出されたユーザIDを使用してWorkSpaces(Windows 2019 仮想デスクトップ)環境に接続します。
+払い出されたユーザIDを使用してWorkSpaces(Windows 2022 仮想デスクトップ)環境に接続します。
 
 1. トレーニング用PCのブラウザを起動し、[WorkSpaces](https://us-west-2.webclient.amazonworkspaces.com/login)にアクセスします。
 
-1. 「Registration code」に「wsnrt+PZRDYF」を入力し、「Register」をクリックします。
+1. 「Registration code」に「wsnrt+W2CWM2」を入力し、「Register」をクリックします。
     ![](/images/lab1/1-0-1_wsregist.png)
 
 1. 「Sign in」をクリックします。

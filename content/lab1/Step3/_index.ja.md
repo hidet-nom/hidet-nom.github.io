@@ -13,7 +13,7 @@ pre = "<b>1-3. </b>"
     ![](/images/lab1/1-1-3_mdc01.png)
 1. 右上「Sign in」をクリックします。
     ![](/images/lab1/1-1-3_mdc02.png)
-1.「ユーザ」「パスワード」を入力し、「Signin」をクリックします。
+1.「ユーザ」「パスワード」を入力し、「Sign in」をクリックします。
     ![](/images/lab1/1-1-3_mdc03.png)
     | ログインに必要な情報 | 内容 |
     | ---- | ---- |
@@ -29,7 +29,7 @@ MetaDefender Core for Windows 評価版、Metascan(マルチスキャン)8エン
     ![](/images/lab1/1-1-3_mdc05.png)
 
 1. 左ペイン「Inventory」を展開し「Modules」をクリックします。
-各エンジンが最新版にアップデートされていること(インジケーターが緑)が確認できます。
+各エンジンが最新版にアップデートされていること(インジケーターが緑)が確認できます。すべてのインジケーターが緑になるまで数分かかる場合があります。
     ![](/images/lab1/1-1-3_mdc06.png)
 
 ### 1-3-2. ファイル無害化機能(Deep CDR)の有効化
@@ -43,12 +43,22 @@ Deep CDRが最新版にアップデートされていること(インジケー�
 1. 「Deep CDR」タブをクリックします。その後、「Enable」をクリックします。
     ![](/images/lab1/1-1-3_mdc09-2.png)
 
-1. 「Deep CDR is enabled」と表示されていることを確認し、下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。
+1. 「Deep CDR is enabled」と表示されていることを確認し、下へスクロールし、「Output filename format」を「【無害化済】_${original.basename|long}_${dataid}.${converted.extension}」に変更します。
+    ![](/images/lab1/1-1-3_mdc09-3.png)
+
+1. 下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。
     ![](/images/lab1/1-1-3_mdc10-2.png)
 
 1. 「Enable for all file types」をチェックし、「OK」をクリックします。
     ![](/images/lab1/1-1-3_mdc11-2.png)
 
-1. 画面右上の、「Save changes」をクリックします。
+1. 画面右上の「Save changes」をクリックします。
     ![](/images/lab1/1-1-3_mdc12-2.png)
 
+1. 画面下方の「Advanced」をクリックします。
+    ![](/images/lab1/1-1-3_mdc13.png)
+
+1. 「Include Processed Objects」をチェックし「Save changes」クリックします。
+    ![](/images/lab1/1-1-3_mdc14.png)
+
+以上で「1-3-1. MetaDefender Coreの管理」は完了です。

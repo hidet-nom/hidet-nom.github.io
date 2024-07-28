@@ -4,12 +4,12 @@ weight = 11
 pre = "<b>1-1. </b>"
 +++
 
-この章では、WorkSpaces(Windows 2019 仮想デスクトップ)上にMetaDefender Coreをインストールします。
+この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Coreをインストールします。
 
 ### 1-1-1. MetaDefender Core のインストール
 
 1. 前の章で接続したトレーニング用仮想デスクトップにアクセスします。
-1. ファイルエクスプローラ等から「C:\OPSWAT_Training\ometascan-5.8.0-1-x64.msi」を起動します。
+1. ファイルエクスプローラ等から「C:\OPSWAT_Training\ometascan-5.7.1-1-x64.msi」を起動します。
     ![](/images/lab1/1-1-1_mdc01.png)
 1. 「Next」をクリックします。
     ![](/images/lab1/1-1-1_mdc02.png)
@@ -25,15 +25,11 @@ pre = "<b>1-1. </b>"
     ![](/images/lab1/1-1-1_mdc07.png)
 1. 「Install」をクリックします。
     ![](/images/lab1/1-1-1_mdc08.png)
-1. 「はい」をクリックします。次の手順まで数分かかります。
-    ![](/images/lab1/1-1-1_mdc09.png)
+1. このような画面が表示されたら「はい」をクリックします。次の手順まで数分かかります。
+    ![](/images/lab1/1-1-5_mdc07-2.PNG)
 1. 「Finish」をクリックします。
     ![](/images/lab1/1-1-1_mdc10.png)
 
 
+「1-1-1. MetaDefender Core のインストール」はこれで完了です。
 
-### 1-1-2. MetaDefender Core の初期設定
-MetaDefender Core の初期設定を行います。
-
-1. デスクトップ上のMetaDefender Coreショートカットを起動します。
-    ![](/images/lab1/1-1-2_mdc01.png)
