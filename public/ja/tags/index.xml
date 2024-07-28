@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on MetaDefender Core ハンズオン</title>
-    <link>/ja/tags.html</link>
+    <link>https://hidet-nom.github.io/ja/tags.html</link>
     <description>Recent content in Tags on MetaDefender Core ハンズオン</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <atom:link href="/ja/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hidet-nom.github.io/ja/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
