@@ -95,14 +95,21 @@
 	"title": "MetaDefender Managed File Transfer (MFT) の初期設定",
 	"tags": [],
 	"description": "",
-	"content": "この章では、MetaDefender Managed File Transfer (MFT) 初期設定を行います。\n3-3-1. MetaDefender Managed File Transfer (MFT) の初期設定 デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23456 左ペインの「Settings」「License」を選択し「Activate」をクリックします。 「sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd」を入力し「Activate online」をクリックします。 このような画面になるのを確認します。 左ペインの「Settings」「Core integration」を選択し右側にある「…」「Edit MetaDefender Core Settings」をクリックします。 下の表の項目を入力し、MetaDefender CoreのMFTユーザー（「3-2-1 MFT接続用アカウントの作成」で取得した）のAPI Keyをコピーし「API Key」へ入力後、「Update」をクリックします。 項目 入力内容 備考 Address http://localhost:8008/ API Key 「2-2-1 MFT接続用アカウントの作成」で作成したmftユーザーのAPI キー User agent mft 「File Processing」が「Enabled」になったのを確認します。 左ペインの「Settings」「Language」を選択し「Japanese」を選択「Update」をクリックします。 「3-3-1. MetaDefender Managed File Transfer (MFT) 初期設定」はこれで完了です。\n"
+	"content": "この章では、MetaDefender Managed File Transfer (MFT) 初期設定を行います。\n3-3-1. MetaDefender Managed File Transfer (MFT) の初期設定 デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23456 左ペインの「Settings」「Security」「License」タブを選択し「Activate」をクリックします。 「sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd」を入力し「Activate online」をクリックします。 このような画面になるのを確認します。 左ペインの「Settings」「Integrations」を選択し右側にある「…」「Edit MetaDefender Core Settings」をクリックします。 下の表の項目を入力し、MetaDefender CoreのMFTユーザー（「3-2-1 MFT接続用アカウントの作成」で取得した）のAPI Keyをコピーし「API Key」へ入力後、「Update」をクリックします。 項目 入力内容 備考 Address http://localhost:8008/ API Key 「2-2-1 MFT接続用アカウントの作成」で作成したmftユーザーのAPI キー User agent mft 「File Processing」が「Enabled」になったのを確認します。 左ペインの「Settings」「Global Settings」「Language」を選択し「Japanese」を選択「Update」をクリックします。 「3-3-1. MetaDefender Managed File Transfer (MFT) 初期設定」はこれで完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab3/step4.html",
 	"title": "MetaDefender Managed File Transfer (MFT) へのファイルアップロード",
 	"tags": [],
 	"description": "",
-	"content": "この章では、MetaDefender Managed File Transfer (MFT) へのファイルアップロードを行います。\n3-3-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23456 左ペインの「概要」「個人ファイル」を選択し「ファイルをアップロード」をクリックします。 「ファイルを追加」をクリックします。 アドレスバーに「C:\\OPSWAT_Training\\demo files」と入力し「demo.pdf」選択後「開く」をクリックします。 「アップロード」をクリックします。 状態が「スキャン中」から「無害化済み」になるまでしばらく待ちます。 ファイル名をクリックし詳細なレポートを確認します。 MetaDefender Core管理コンソールにログインし、左ペインの「History」「Processing」を選択しmftユーザーから送られてきた処理を確認します。 「3-4-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード」はこれで完了です。\n"
+	"content": "この章では、MetaDefender Managed File Transfer (MFT) へのファイルアップロードを行います。\n3-4-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード デスクトップショートカットの「MetaDefender Managed File Transfer」をダブルククリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23456 左ペインの「概要」「個人ファイル」を選択し「ファイルをアップロード」をクリックします。 「ファイルを追加」をクリックします。 アドレスバーに「C:\\OPSWAT_Training\\demo files」と入力し「demo.pdf」選択後「開く」をクリックします。 「アップロード」をクリックします。 状態が「スキャン中」から「無害化済み」になるまでしばらく待ちます。 ファイル名をクリックし詳細なレポートを確認します。 MetaDefender Core管理コンソールにログインし、左ペインの「History」「Processing」を選択しmftユーザーから送られてきた処理を確認します。 「3-4-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード」はこれで完了です。\n"
+},
+{
+	"uri": "https://hidet-nom.github.io/ja/lab3/step5.html",
+	"title": "MetaDefender Managed File Transfer (MFT) 用Workflow設定",
+	"tags": [],
+	"description": "",
+	"content": "この章では、MetaDefender Managed File Transfer (MFT) 用Workflow設定を行います。\n3-5-1. MetaDefender Managed File Transfer (MFT) 用Workflow設定を行います。 MetaDefender Core 管理コンソールへのログオンします。Webブラウザから「http://localhost:8008」へ接続します。 またはデスクトップショートカットの「MetaDefender Core」をダブルクリックします。 「Workflow Management」「Workfows」「MetaDefender Vault」の「Edit」をクリックします。 「General」タブの「Restriction」「Limit to specified user agents」にユーザー「mft」を追加します。最後に「Save changes」をクリックします。 左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「File process」をクリックします。 「Deep CDR」タブをクリックします。その後、「Enable」をクリックします。 「Deep CDR is enabled」と表示されていることを確認し、下へスクロールし、「Output filename format」を「【無害化済】${original.basename|long}${dataid}.${converted.extension}」に変更します。 下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。 「Enable for all file types」をチェックし、「OK」をクリックします。 画面右上の「Save changes」をクリックします。 「3-5-1. MetaDefender Managed File Transfer (MFT) 用Workflow設定」はこれで完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab4.html",

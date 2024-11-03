@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 <link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 
-  <title>MetaDefender Coreのインストール :: MetaDefender Core ハンズオン</title>
+  <title>MetaDefender Managed File Transfer (MFT) 用Workflow設定 :: MetaDefender Core ハンズオン</title>
 
   
   <link href="/css/nucleus.css" rel="stylesheet">
@@ -45,7 +45,7 @@
   
 </head>
 
-<body class="" data-url="/ja/lab1/step1.html">
+<body class="" data-url="/ja/lab3/step5.html">
   <nav id="sidebar" class="">
 
 
@@ -90,7 +90,7 @@
   
     
     <li data-nav-id="/ja/lab1.html" title="MetaDefender Core" class="dd-item 
-        parent
+        
         
         
         ">
@@ -142,7 +142,7 @@
     
     <li data-nav-id="/ja/lab1/step1.html" title="MetaDefender Coreのインストール" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/ja/lab1/step1.html">
@@ -326,7 +326,7 @@
   
     
     <li data-nav-id="/ja/lab3.html" title="MetaDefender Managed File Transfer (MFT)" class="dd-item 
-        
+        parent
         
         
         ">
@@ -450,7 +450,7 @@
     
     <li data-nav-id="/ja/lab3/step5.html" title="MetaDefender Managed File Transfer (MFT) 用Workflow設定" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/ja/lab3/step5.html">
@@ -654,7 +654,7 @@
           
           
           
-          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab1.html'>MetaDefender Core</a> > MetaDefender Coreのインストール
+          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab3.html'>MetaDefender Managed File Transfer (MFT)</a> > MetaDefender Managed File Transfer (MFT) 用Workflow設定
           
           
           
@@ -670,7 +670,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#1-1-1-metadefender-core-のインストール">1-1-1. MetaDefender Core のインストール</a></li>
+        <li><a href="#3-5-1-metadefender-managed-file-transfer-mft--用workflow設定を行います">3-5-1. MetaDefender Managed File Transfer (MFT)  用Workflow設定を行います。</a></li>
       </ul>
     </li>
   </ul>
@@ -685,38 +685,54 @@
 
       
         <div id="body-inner">
-          <h1>MetaDefender Coreのインストール</h1>
+          <h1>MetaDefender Managed File Transfer (MFT) 用Workflow設定</h1>
           
           
 
 
 
-	<p>この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Coreをインストールします。</p>
-<h3 id="1-1-1-metadefender-core-のインストール">1-1-1. MetaDefender Core のインストール</h3>
+	<p>この章では、MetaDefender Managed File Transfer (MFT)  用Workflow設定を行います。</p>
+<h3 id="3-5-1-metadefender-managed-file-transfer-mft--用workflow設定を行います">3-5-1. MetaDefender Managed File Transfer (MFT)  用Workflow設定を行います。</h3>
 <ol>
-<li>前の章で接続したトレーニング用仮想デスクトップにアクセスします。</li>
-<li>ファイルエクスプローラ等から「C:\OPSWAT_Training\ometascan-5.7.1-1-x64.msi」を起動します。
-<img src="/images/lab1/1-1-1_mdc01.png" alt=""></li>
-<li>「Next」をクリックします。
-<img src="/images/lab1/1-1-1_mdc02.png" alt=""></li>
-<li>「I accept the terms in the License Agreement」を選択し「Next」をクリックします。
-<img src="/images/lab1/1-1-1_mdc03.png" alt=""></li>
-<li>「Simple」をクリックします。
-<img src="/images/lab1/1-1-1_mdc04.png" alt=""></li>
-<li>デフォルト値のまま「Next」をクリックします。
-<img src="/images/lab1/1-1-1_mdc05.png" alt=""></li>
-<li>「Standalone」をクリックします。
-<img src="/images/lab1/1-1-1_mdc06.png" alt=""></li>
-<li>デフォルト値のまま「Password」および「Confirm Password」に「Opswat!23」を入力し、「Next」をクリックします。
-<img src="/images/lab1/1-1-1_mdc07.png" alt=""></li>
-<li>「Install」をクリックします。
-<img src="/images/lab1/1-1-1_mdc08.png" alt=""></li>
-<li>このような画面が表示されたら「はい」をクリックします。次の手順まで数分かかります。
-<img src="/images/lab1/1-1-5_mdc07-2.PNG" alt=""></li>
-<li>「Finish」をクリックします。
-<img src="/images/lab1/1-1-1_mdc10.png" alt=""></li>
+<li>
+<p>MetaDefender Core 管理コンソールへのログオンします。Webブラウザから「http://localhost:8008」へ接続します。
+またはデスクトップショートカットの「MetaDefender Core」をダブルクリックします。
+<img src="/images/lab2/Kiosk000-01.PNG" alt=""></p>
+</li>
+<li>
+<p>「Workflow Management」「Workfows」「MetaDefender Vault」の「Edit」をクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_4-1.PNG" alt=""></p>
+</li>
+<li>
+<p>「General」タブの「Restriction」「Limit to specified user agents」にユーザー「mft」を追加します。最後に「Save changes」をクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_4-2.PNG" alt=""></p>
+</li>
+<li>
+<p>左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「File process」をクリックします。
+<img src="/images/lab1/1-1-3_mdc08-2.png" alt=""></p>
+</li>
+<li>
+<p>「Deep CDR」タブをクリックします。その後、「Enable」をクリックします。
+<img src="/images/lab1/1-1-3_mdc09-2.png" alt=""></p>
+</li>
+<li>
+<p>「Deep CDR is enabled」と表示されていることを確認し、下へスクロールし、「Output filename format」を「【無害化済】<em>${original.basename|long}</em>${dataid}.${converted.extension}」に変更します。
+<img src="/images/lab1/1-1-3_mdc09-3.png" alt=""></p>
+</li>
+<li>
+<p>下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。
+<img src="/images/lab1/1-1-3_mdc10-2.png" alt=""></p>
+</li>
+<li>
+<p>「Enable for all file types」をチェックし、「OK」をクリックします。
+<img src="/images/lab1/1-1-3_mdc11-2.png" alt=""></p>
+</li>
+<li>
+<p>画面右上の「Save changes」をクリックします。
+<img src="/images/lab1/1-1-3_mdc12-2.png" alt=""></p>
+</li>
 </ol>
-<p>「1-1-1. MetaDefender Core のインストール」はこれで完了です。</p>
+<p>「3-5-1. MetaDefender Managed File Transfer (MFT) 用Workflow設定」はこれで完了です。</p>
 
 
 
@@ -791,26 +807,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -837,40 +833,6 @@
                     
             
         
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
                     
                         
             
@@ -954,6 +916,24 @@
             
         
                     
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
                         
             
             
@@ -1002,6 +982,19 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
             
         
                     
@@ -1009,6 +1002,29 @@
             
             
                 
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -1096,10 +1112,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ja/lab1/step0.html" title="Amazon WorkSpaces への接続"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ja/lab3/step4.html" title="MetaDefender Managed File Transfer (MFT) へのファイルアップロード"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/ja/lab1/step2.html" title="MetaDefender Core の初期設定" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/ja/lab4.html" title="MetaDefender Managed File Transfer (MFT)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
