@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 <link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 
-  <title>MetaDefender Managed File Transfer (MFT) のインストール :: MetaDefender Core ハンズオン</title>
+  <title>MetaDefender Managed File Transfer (MFT)   to MFT 同期設定 :: MetaDefender Core ハンズオン</title>
 
   
   <link href="/css/nucleus.css" rel="stylesheet">
@@ -45,7 +45,7 @@
   
 </head>
 
-<body class="" data-url="/ja/lab4/step1.html">
+<body class="" data-url="/ja/lab3/step6.html">
   <nav id="sidebar" class="">
 
 
@@ -326,7 +326,7 @@
   
     
     <li data-nav-id="/ja/lab3.html" title="MetaDefender Managed File Transfer (MFT)" class="dd-item 
-        
+        parent
         
         
         ">
@@ -474,7 +474,7 @@
     
     <li data-nav-id="/ja/lab3/step6.html" title="MetaDefender Managed File Transfer (MFT)   to MFT 同期設定" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/ja/lab3/step6.html">
@@ -504,7 +504,7 @@
   
     
     <li data-nav-id="/ja/lab4.html" title="MetaDefender Managed File Transfer (MFT)" class="dd-item 
-        parent
+        
         
         
         ">
@@ -532,7 +532,7 @@
     
     <li data-nav-id="/ja/lab4/step1.html" title="MetaDefender Managed File Transfer (MFT) のインストール" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/ja/lab4/step1.html">
@@ -678,7 +678,7 @@
           
           
           
-          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab4.html'>MetaDefender Managed File Transfer (MFT)</a> > MetaDefender Managed File Transfer (MFT) のインストール
+          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab3.html'>MetaDefender Managed File Transfer (MFT)</a> > MetaDefender Managed File Transfer (MFT)   to MFT 同期設定
           
           
           
@@ -694,7 +694,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#4-1-1-metadefender-managed-file-transfer-mft-のインストール">4-1-1. MetaDefender Managed File Transfer (MFT) のインストール</a></li>
+        <li><a href="#3-6-1-metadefender-managed-file-transfer-mft--to-mft-同期設定を行います">3-6-1. MetaDefender Managed File Transfer (MFT)  to MFT 同期設定を行います。</a></li>
       </ul>
     </li>
   </ul>
@@ -709,33 +709,27 @@
 
       
         <div id="body-inner">
-          <h1>MetaDefender Managed File Transfer (MFT) のインストール</h1>
+          <h1>MetaDefender Managed File Transfer (MFT)   to MFT 同期設定</h1>
           
           
 
 
 
-	<p>この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Managed File Transfer (MFT) をインストールします。</p>
-<h3 id="4-1-1-metadefender-managed-file-transfer-mft-のインストール">4-1-1. MetaDefender Managed File Transfer (MFT) のインストール</h3>
+	<p>この章では、MetaDefender Managed File Transfer (MFT)  to MFT 同期設定を行います。</p>
+<h3 id="3-6-1-metadefender-managed-file-transfer-mft--to-mft-同期設定を行います">3-6-1. MetaDefender Managed File Transfer (MFT)  to MFT 同期設定を行います。</h3>
 <ol>
-<li>前の章で接続したトレーニング用仮想デスクトップにアクセスします。</li>
-<li>ファイルエクスプローラ等から「C:\OPSWAT_Training\metadefender-managed-file-transfer_X.X.X.X.exe」を起動します。
-<img src="/images/lab4/Kiosk01-3.PNG" alt=""></li>
-<li>「I agree to the lizense terms and conditions」にチェックし、「Install」をクリックします。
-<img src="/images/lab4/Kiosk01.PNG" alt=""></li>
-<li>このような画面が表示されたら「はい」をクリックします。次の画面が表示されるまで数分待ちます。
-<img src="/images/lab4/Kiosk01-2.PNG" alt=""></li>
-<li>「Microsoft SQL Server Express LocalDB」を選択し「Next」をクリックします。
-<img src="/images/lab4/Kiosk02.PNG" alt=""></li>
-<li>「はい」をクリックします。
-<img src="/images/lab4/Kiosk03.PNG" alt=""></li>
-<li>数分待った後、「Launch」をクリックします。
-<img src="/images/lab4/Kiosk03-2.PNG" alt="">
-<img src="/images/lab4/Kiosk04.PNG" alt=""></li>
-<li>「Continue」をクリックします。
-<img src="/images/lab2/Kiosk05.PNG" alt=""></li>
-<li>下の表に従って「Email」「First name」「Last name」「Username」「Password」「Confirm password」を入力し、「Create」をクリックします。
-<img src="/images/lab4/Kiosk06.PNG" alt="">
+<li>
+<p>MetaDefender Managed File Transfer 管理コンソールへのログオンします。Webブラウザから「http://localhost:8010」へ接続します。
+またはデスクトップショートカットの「MetaDefender Managed File Transfer」をダブルクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_10.png" alt=""></p>
+</li>
+<li>
+<p>ログイン後、左ペインの「設定」を展開し「統合」「MFTからMFT」タブをクリックします。
+<img src="/images/lab3/1103_SE_Training_3-6_001.png" alt=""></p>
+</li>
+<li>
+<p>「ミラーリング有効化」を有効にした後、「転送ポリシー」を「許可されたファイルのみ転送」に、「ターゲット名」「MFTtoMFT」、「REST API」「http://demo01.workspaces.tokyo:10245/vault_rest」、「APIキー」「3VArjGEvzNv788GLGivL5qBvZu9gcL」を入力し、「更新」ボタンをクリックします。
+<img src="/images/lab3/1103_SE_Training_3-6_003.png" alt=""></p>
 <table>
 <thead>
 <tr>
@@ -746,40 +740,30 @@
 </thead>
 <tbody>
 <tr>
-<td>Email</td>
-<td><a href="mailto:training@opswat.local">training@opswat.local</a></td>
+<td>転送ポリシー</td>
+<td>許可されたファイルのみ転送</td>
 <td></td>
 </tr>
 <tr>
-<td>First name</td>
-<td>opswat</td>
+<td>ターゲット名</td>
+<td>MFTtoMFT</td>
 <td></td>
 </tr>
 <tr>
-<td>Last name</td>
-<td>opswat</td>
+<td>REST URL</td>
+<td><a href="http://demo01.workspaces.tokyo:10245/vault_rest">http://demo01.workspaces.tokyo:10245/vault_rest</a></td>
 <td></td>
 </tr>
 <tr>
-<td>Username</td>
-<td>opswat</td>
-<td></td>
-</tr>
-<tr>
-<td>Password</td>
-<td>Opswat1234567!</td>
-<td></td>
-</tr>
-<tr>
-<td>Confirm password</td>
-<td>Opswat1234567!</td>
+<td>APIキー</td>
+<td>3VArjGEvzNv788GLGivL5qBvZu9gcL</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </li>
 </ol>
-<p>「4-1-1. MetaDefender Core のインストール」はこれで完了です。</p>
+<p>「3-6-1. MetaDefender Managed File Transfer (MFT)  to MFT 同期設定」はこれで完了です。</p>
 
 
 
@@ -1066,40 +1050,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1112,6 +1062,9 @@
             
         
                     
+            
+        
+                    
                         
             
             
@@ -1119,6 +1072,37 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1175,10 +1159,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ja/lab4.html" title="MetaDefender Managed File Transfer (MFT)"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ja/lab3/step5.html" title="MetaDefender Managed File Transfer (MFT) 用Workflow設定"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/ja/lab4/step2.html" title="MFT接続用アカウントの作成" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/ja/lab4.html" title="MetaDefender Managed File Transfer (MFT)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
