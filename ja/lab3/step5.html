@@ -700,27 +700,63 @@
 <img src="/images/lab2/Kiosk000-01.PNG" alt=""></p>
 </li>
 <li>
-<p>「Workflow Management」「Workfows」「MetaDefender Vault」の「Edit」をクリックします。
-<img src="/images/lab3/1103_SE_Training_3-5_4-1.PNG" alt=""></p>
+<p>ログイン後、左ペインの「Inventory」を展開し「Modules」「Adaptive Sandbox」をクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_001.png" alt=""></p>
 </li>
 <li>
-<p>「General」タブの「Restriction」「Limit to specified user agents」にユーザー「mft」を追加します。最後に「Save changes」をクリックします。
-<img src="/images/lab3/1103_SE_Training_3-5_4-2.PNG" alt=""></p>
+<p>下へスクロールし「Address」「Edit」クリック後、「https://demo01.workspaces.tokyo:10244」を入力し、チェックボタンをクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_002.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>入力内容</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Address</td>
+<td><a href="https://demo01.workspaces.tokyo:10244">https://demo01.workspaces.tokyo:10244</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </li>
 <li>
-<p>左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「File process」をクリックします。
-<img src="/images/lab1/1-1-3_mdc08-2.png" alt=""></p>
+<p>下へスクロールし「API Key」「Edit」クリック後、「O6JqahyLIQt14tBobToimzhWMt5K-Z9DvnXFESrn」を入力し、チェックボタンをクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_003.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>入力内容</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>API Key</td>
+<td>O6JqahyLIQt14tBobToimzhWMt5K-Z9DvnXFESrn</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </li>
 <li>
-<p>「Deep CDR」タブをクリックします。その後、「Enable」をクリックします。
-<img src="/images/lab1/1-1-3_mdc09-2.png" alt=""></p>
+<p>画面右上の「Save changes」をクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_004.png" alt=""></p>
 </li>
 <li>
-<p>「Deep CDR is enabled」と表示されていることを確認し、下へスクロールし、「Output filename format」を「【無害化済】<em>${original.basename|long}</em>${dataid}.${converted.extension}」に変更します。
-<img src="/images/lab1/1-1-3_mdc09-3.png" alt=""></p>
+<p>左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「MetaDefender Vault」をクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_6.png" alt=""></p>
 </li>
 <li>
-<p>下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。
+<p>「Deep CDR」タブをクリックします。その後、「Enable Deep CDR」を「Status：Active」にします。
+<img src="/images/lab3/1103_SE_Training_3-5_5-1.png" alt=""></p>
+</li>
+<li>
+<p>「Status：Active」と表示されていることを確認し、下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。
 <img src="/images/lab1/1-1-3_mdc10-2.png" alt=""></p>
 </li>
 <li>
@@ -728,8 +764,49 @@
 <img src="/images/lab1/1-1-3_mdc11-2.png" alt=""></p>
 </li>
 <li>
+<p>「Advanced configuration」を展開し、「Include Processed Objects」および「Analysis mode」をチェックします。
+<img src="/images/lab3/1103_SE_Training_3-5_7.png" alt=""></p>
+</li>
+<li>
+<p>「Adaptive Sandbox」タブをクリックします。その後、「Enable Adaptive Sandbox」を「Status：Active」にします。
+<img src="/images/lab3/1103_SE_Training_3-5_8.png" alt=""></p>
+</li>
+<li>
+<p>そのまま画面を下へスクロールし「Engine result[s] filtering」「Enable for AV scan result[s]」に「No Threat found」を追加します。
+<img src="/images/lab3/1103_SE_Training_3-5_9.png" alt=""></p>
+</li>
+<li>
 <p>画面右上の「Save changes」をクリックします。
 <img src="/images/lab1/1-1-3_mdc12-2.png" alt=""></p>
+</li>
+<li>
+<p>MetaDefender Managed File Transfer 管理コンソールへのログオンします。Webブラウザから「http://localhost:8010」へ接続します。
+またはデスクトップショートカットの「MetaDefender Managed File Transfer」をダブルクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_10.png" alt=""></p>
+</li>
+<li>
+<p>左ペインの「Settings」「Integrations」を選択し右側にある「…」「MetaDefender Core の設定を編集」をクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_11.png" alt=""></p>
+</li>
+<li>
+<p>下の表の項目を入力し、「デフォルトのワークフロー」を「MetaDefender Vault」へ変更後、「変更を保存」をクリックします。
+<img src="/images/lab3/1103_SE_Training_3-5_12.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>入力内容</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>デフォルトのワークフロー</td>
+<td>MetaDefender Vault</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </li>
 </ol>
 <p>「3-5-1. MetaDefender Managed File Transfer (MFT) 用Workflow設定」はこれで完了です。</p>
