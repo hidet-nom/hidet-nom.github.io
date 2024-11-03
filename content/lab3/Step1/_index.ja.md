@@ -1,33 +1,41 @@
 +++
-title = "【オプション】MetaDefender Core のアップデート"
+title = "MetaDefender Managed File Transfer (MFT) のインストール"
 weight = 31
 pre = "<b>3-1. </b>"
 +++
 
-この章では、MetaDefender Core 5.7.1 から 5.8.0 への上書きアップデートを実施します。
+この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Managed File Transfer (MFT) をインストールします。
 
+### 3-1-1. MetaDefender Managed File Transfer (MFT) のインストール
 
-### 3-1-1. MetaDefender Core 5.8.0 への上書きアップデート
+1. 前の章で接続したトレーニング用仮想デスクトップにアクセスします。
+1. ファイルエクスプローラ等から「C:\OPSWAT_Training\metadefender-managed-file-transfer_3.8.0.0.exe」を起動します。
+    ![](/images/lab2/Kiosk01-3.PNG)
+1. 「I agree to the lizense terms and conditions」にチェックし、「Install」をクリックします。
+    ![](/images/lab2/Kiosk01.PNG)
+1. このような画面が表示されたら「はい」をクリックします。次の画面が表示されるまで数分待ちます。
+    ![](/images/lab2/Kiosk01-2.PNG)
+1. 「Microsoft SQL Server Express LocalDB」を選択し「Next」をクリックします。
+    ![](/images/lab2/Kiosk02.PNG)
+1. 「はい」をクリックします。
+    ![](/images/lab2/Kiosk03.PNG)
+1. 数分待った後、「Launch」をクリックします。
+    ![](/images/lab2/Kiosk03-2.PNG)
+    ![](/images/lab2/Kiosk04.PNG)
+1. 「Continue」をクリックします。
+    ![](/images/lab2/Kiosk05.PNG)
+1. 下の表に従って「Email」「First name」「Last name」「Username」「Password」「Confirm password」を入力し、「Create」をクリックします。
+    ![](/images/lab2/Kiosk06.PNG)
 
-1. ファイルエクスプローラで「C:\OPSWAT_Training」フォルダを開きます。
-    ![](/images/lab1/1-1-5_mdc01.PNG)
-1. 「ometascan-5.8.0-1-x64.msi」を開きます。「Next」をクリックします。
-    ![](/images/lab1/1-1-5_mdc02.PNG)
-1. 「I accept the terms in the License Agreement」を選択し「Next」をクリックします。
-    ![](/images/lab1/1-1-5_mdc03.PNG)
-1. デフォルト値のまま「Next」をクリックします。
-    ![](/images/lab1/1-1-5_mdc04.PNG)
-1. 「Standalone」をクリックします。
-    ![](/images/lab1/1-1-5_mdc05.PNG)
-1. チェックを付けずに「Next」をクリックします。
-    ![](/images/lab1/1-1-5_mdc06.PNG)
-1. チェックを付けずに「Install」をクリックします。
-    ![](/images/lab1/1-1-5_mdc07.PNG)
-1. このような画面が表示されたら「はい」をクリックします。
-    ![](/images/lab1/1-1-5_mdc07-2.PNG)
-1. 数分程度待ちます。
-    ![](/images/lab1/1-1-5_mdc08.PNG)
-1. この画面が表示されたら「Finish」をクリックします。
-    ![](/images/lab1/1-1-5_mdc09.PNG)
+    
+    | 項目 | 入力内容 | 備考 |
+    | ---- | ---- | ---- |
+    | Email | training@opswat.local | |
+    | First name | opswat | |
+    | Last name | opswat | |
+    | Username | opswat | |
+    | Password | Opswat!23456 | |
+    | Confirm password | Opswat!23456 | |
 
-以上で「3-1-1. MetaDefender Core 5.8.0 への上書きアップデート」は完了です。
+「3-1-1. MetaDefender Core のインストール」はこれで完了です。
+

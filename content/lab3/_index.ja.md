@@ -1,14 +1,19 @@
 +++
-title = "【オプション】MetaDefender Core のアップデート"
+title = "MetaDefender Managed File Transfer (MFT)"
 weight = 30
 pre = "<b>3. </b>"
 +++
 
-この章では、MetaDefender Core の上書きアップデートを実施します。
+この章では、Amazon WorkSpaces (Windows 2022 仮想デスクトップ)上に MetaDefender Managed File Transfer (MFT) をインストールします。
 
-1-1.  【オプション】MetaDefender Core のアップデート
+3-1.  MetaDefender Managed File Transferのインストール
 
-1-2.  【オプション】MetaDefender Core 管理コンソールでのアップデート確認
+3-2.  MetaDefender Managed File Transfer接続用アカウントの作成
+
+3-3.  MetaDefender Managed File Transferの初期設定
+
+3-4.  MetaDefender Managed File Transferへのファイルアップロード（ファイル処理送信(マルチスキャンおよび無害化(Deep CDR)))
+
 
 今回作成する環境のイメージは以下の通りです。
-![](/images/lab1/1-0-0_mdc.png)
+![](/images/lab2/Kiosk000.PNG)

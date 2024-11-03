@@ -1,12 +1,12 @@
 +++
 title = "MetaDefender Managed File Transfer (MFT) の初期設定"
-weight = 23
-pre = "<b>2-3. </b>"
+weight = 33
+pre = "<b>3-3. </b>"
 +++
 
 この章では、MetaDefender Managed File Transfer (MFT) 初期設定を行います。
 
-### 2-3-1. MetaDefender Managed File Transfer (MFT) の初期設定
+### 3-3-1. MetaDefender Managed File Transfer (MFT) の初期設定
 
 1. デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。
     ![](/images/lab2/Kiosk15.PNG)
@@ -26,7 +26,7 @@ pre = "<b>2-3. </b>"
     ![](/images/lab2/Kiosk17.PNG)
 1. 左ペインの「Settings」「Core integration」を選択し右側にある「…」「Edit MetaDefender Core Settings」をクリックします。
     ![](/images/lab2/Kiosk07-02.PNG)
-1. 下の表の項目を入力し、MetaDefender CoreのMFTユーザー（「2-2-1 MFT接続用アカウントの作成」で取得した）のAPI Keyをコピーし「API Key」へ入力後、「Update」をクリックします。
+1. 下の表の項目を入力し、MetaDefender CoreのMFTユーザー（「3-2-1 MFT接続用アカウントの作成」で取得した）のAPI Keyをコピーし「API Key」へ入力後、「Update」をクリックします。
     ![](/images/lab2/Kiosk005.PNG)
     
     | 項目 | 入力内容 | 備考 |
@@ -41,5 +41,5 @@ pre = "<b>2-3. </b>"
 1. 左ペインの「Settings」「Language」を選択し「Japanese」を選択「Update」をクリックします。
     ![](/images/lab2/Kiosk006.PNG)
 
-「2-3-1. MetaDefender Managed File Transfer (MFT) 初期設定」はこれで完了です。
+「3-3-1. MetaDefender Managed File Transfer (MFT) 初期設定」はこれで完了です。
 

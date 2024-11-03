@@ -1,12 +1,12 @@
 +++
 title = "MetaDefender Managed File Transfer (MFT) へのファイルアップロード"
-weight = 24
-pre = "<b>2-4. </b>"
+weight = 34
+pre = "<b>3-4. </b>"
 +++
 
 この章では、MetaDefender Managed File Transfer (MFT) へのファイルアップロードを行います。
 
-### 2-3-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード
+### 3-3-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード
 
 1. デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。
     ![](/images/lab2/Kiosk15.PNG)
@@ -36,5 +36,5 @@ pre = "<b>2-4. </b>"
     ![](/images/lab2/Kiosk013-3.PNG)
 
 
-「2-4-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード」はこれで完了です。
+「3-4-1. MetaDefender Managed File Transfer (MFT) へのファイルアップロード」はこれで完了です。
 
