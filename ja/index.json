@@ -120,14 +120,14 @@
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab4.html",
-	"title": "Menlo &amp; MetaDefender Core インテグレーション事前準備",
+	"title": "Menlo &amp; MetaDefender Core インテグレーション",
 	"tags": [],
 	"description": "",
 	"content": "この章では、Amazon WorkSpaces (Windows 2022 仮想デスクトップ)上に Menlo ミドルウェアをインストールします。\n4-1. Menlo ミドルウェアの事前準備\n4-2. Menlo ミドルウェアのインストール/起動\n今回作成する環境のイメージは以下の通りです。 "
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab4/step1.html",
-	"title": "Menlo &amp; MetaDefender Core インテグレーション",
+	"title": "Menlo &amp; MetaDefender Core インテグレーション事前準備",
 	"tags": [],
 	"description": "",
 	"content": "この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMenlo ミドルウェアをインストールするための事前準備をします。\n4-1-1. Pythonのインストール 前の章で接続したトレーニング用仮想デスクトップに接続およびログインします。 ファイルエクスプローラ等から「C:\\OPSWAT_Training\\python-3.12.4-amd64.exe」右クリックし「管理者として実行」を選択します。 このような画面が表示されたら「はい」をクリックします。 「Add python.exe to PATH」を選択し「Install Now」をクリックします。 インストールが完了するとこのような画面が表示されるため「Close」をクリックします。 「4-1-1. Menlo ミドルウェアの事前準備」はこれで完了です。\n"
@@ -137,7 +137,7 @@
 	"title": "Menlo ミドルウェアのインストール/起動",
 	"tags": [],
 	"description": "",
-	"content": "この章では、Menlo ミドルウェアのインストール/起動を行います。\n4-2-1. Menlo ミドルウェアのインストール/起動 仮想デスクトップへのログオンします。デスクトップ画面左下のWindowsアイコンを右クリックし、「Windows PowerShell(管理者)」をクリックします。 「cd C:\\OPSWAT_Training」「git clone https://github.com/OPSWAT/metadefender-menlo-integration」を実行します。 「C:\\OPSWAT_Training\\metadefender-menlo-integration」が作成されMenlo ミドルウェアがクローンされたことを確認します。 「pip install git+https://github.com/dpkp/kafka-python.git」を実行します。 「cd metadefender-menlo-integration」「pip install -r requirements.txt」を実行します。 必要に応じて「config.yml」をテキストエディタで編集し、編集後保存します。 「python -m metadefender_menlo」を実行します。下のような画面になれば起動は成功です。 「4-2-1. Menlo ミドルウェアのインストール/起動」はこれで完了です。\n"
+	"content": "この章では、Menlo ミドルウェアのインストール/起動を行います。\n4-2-1. Menlo ミドルウェアのインストール/起動 仮想デスクトップへのログオンします。デスクトップ画面左下のWindowsアイコンを右クリックし、「Windows PowerShell(管理者)」をクリックします。 「cd C:\\OPSWAT_Training」「git clone https://github.com/OPSWAT/metadefender-menlo-integration」を実行します。\nPS cd C:\\OPSWAT_Training PS git clone https://github.com/OPSWAT/metadefender-menlo-integration 「C:\\OPSWAT_Training\\metadefender-menlo-integration」が作成されMenlo ミドルウェアがクローンされたことを確認します。 「pip install git+https://github.com/dpkp/kafka-python.git」を実行します。 PS pip install git+https://github.com/dpkp/kafka-python.git 「cd metadefender-menlo-integration」「pip install -r requirements.txt」を実行します。 PS cd metadefender-menlo-integration PS pip install git+https://github.com/dpkp/kafka-python.git 必要に応じて「config.yml」をテキストエディタで編集し、編集後保存します。 「python -m metadefender_menlo」を実行します。下のような画面になれば起動は成功です。 「4-2-1. Menlo ミドルウェアのインストール/起動」はこれで完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/categories.html",
