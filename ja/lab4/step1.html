@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 <link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 
-  <title>MetaDefender Managed File Transfer (MFT) のインストール :: MetaDefender Core ハンズオン</title>
+  <title>Menlo &amp; MetaDefender Core インテグレーション :: MetaDefender Core ハンズオン</title>
 
   
   <link href="/css/nucleus.css" rel="stylesheet">
@@ -503,13 +503,13 @@
  
   
     
-    <li data-nav-id="/ja/lab4.html" title="MetaDefender Managed File Transfer (MFT)" class="dd-item 
+    <li data-nav-id="/ja/lab4.html" title="Menlo &amp; MetaDefender Core インテグレーション事前準備" class="dd-item 
         parent
         
         
         ">
       <a href="/ja/lab4.html">
-          <b>4. </b>MetaDefender Managed File Transfer (MFT)
+          <b>4. </b>Menlo &amp; MetaDefender Core インテグレーション事前準備
           
       </a>
       
@@ -530,13 +530,13 @@
  
   
     
-    <li data-nav-id="/ja/lab4/step1.html" title="MetaDefender Managed File Transfer (MFT) のインストール" class="dd-item 
+    <li data-nav-id="/ja/lab4/step1.html" title="Menlo &amp; MetaDefender Core インテグレーション" class="dd-item 
         
         active
         
         ">
       <a href="/ja/lab4/step1.html">
-          <b>4-1. </b>MetaDefender Managed File Transfer (MFT) のインストール
+          <b>4-1. </b>Menlo &amp; MetaDefender Core インテグレーション
           
       </a>
       
@@ -554,61 +554,13 @@
  
   
     
-    <li data-nav-id="/ja/lab4/step2.html" title="MFT接続用アカウントの作成" class="dd-item 
+    <li data-nav-id="/ja/lab4/step2.html" title="Menlo ミドルウェアのインストール/起動" class="dd-item 
         
         
         
         ">
       <a href="/ja/lab4/step2.html">
-          <b>4-2. </b>MFT接続用アカウントの作成
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/ja/lab4/step3.html" title="MetaDefender Managed File Transfer (MFT) の初期設定" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ja/lab4/step3.html">
-          <b>4-3. </b>MetaDefender Managed File Transfer (MFT) の初期設定
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/ja/lab4/step4.html" title="MetaDefender Managed File Transfer (MFT) へのファイルアップロード" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ja/lab4/step4.html">
-          <b>4-4. </b>MetaDefender Managed File Transfer (MFT) へのファイルアップロード
+          <b>4-2. </b>Menlo ミドルウェアのインストール/起動
           
       </a>
       
@@ -678,7 +630,7 @@
           
           
           
-          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab4.html'>MetaDefender Managed File Transfer (MFT)</a> > MetaDefender Managed File Transfer (MFT) のインストール
+          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab4.html'>Menlo & MetaDefender Core インテグレーション事前準備</a> > Menlo & MetaDefender Core インテグレーション
           
           
           
@@ -694,7 +646,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#4-1-1-metadefender-managed-file-transfer-mft-のインストール">4-1-1. MetaDefender Managed File Transfer (MFT) のインストール</a></li>
+        <li><a href="#4-1-1-pythonのインストール">4-1-1. Pythonのインストール</a></li>
       </ul>
     </li>
   </ul>
@@ -709,77 +661,26 @@
 
       
         <div id="body-inner">
-          <h1>MetaDefender Managed File Transfer (MFT) のインストール</h1>
+          <h1>Menlo &amp; MetaDefender Core インテグレーション</h1>
           
           
 
 
 
-	<p>この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Managed File Transfer (MFT) をインストールします。</p>
-<h3 id="4-1-1-metadefender-managed-file-transfer-mft-のインストール">4-1-1. MetaDefender Managed File Transfer (MFT) のインストール</h3>
+	<p>この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMenlo ミドルウェアをインストールするための事前準備をします。</p>
+<h3 id="4-1-1-pythonのインストール">4-1-1. Pythonのインストール</h3>
 <ol>
-<li>前の章で接続したトレーニング用仮想デスクトップにアクセスします。</li>
-<li>ファイルエクスプローラ等から「C:\OPSWAT_Training\metadefender-managed-file-transfer_X.X.X.X.exe」を起動します。
-<img src="/images/lab4/Kiosk01-3.PNG" alt=""></li>
-<li>「I agree to the lizense terms and conditions」にチェックし、「Install」をクリックします。
-<img src="/images/lab4/Kiosk01.PNG" alt=""></li>
-<li>このような画面が表示されたら「はい」をクリックします。次の画面が表示されるまで数分待ちます。
-<img src="/images/lab4/Kiosk01-2.PNG" alt=""></li>
-<li>「Microsoft SQL Server Express LocalDB」を選択し「Next」をクリックします。
-<img src="/images/lab4/Kiosk02.PNG" alt=""></li>
-<li>「はい」をクリックします。
-<img src="/images/lab4/Kiosk03.PNG" alt=""></li>
-<li>数分待った後、「Launch」をクリックします。
-<img src="/images/lab4/Kiosk03-2.PNG" alt="">
-<img src="/images/lab4/Kiosk04.PNG" alt=""></li>
-<li>「Continue」をクリックします。
-<img src="/images/lab2/Kiosk05.PNG" alt=""></li>
-<li>下の表に従って「Email」「First name」「Last name」「Username」「Password」「Confirm password」を入力し、「Create」をクリックします。
-<img src="/images/lab4/Kiosk06.PNG" alt="">
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>入力内容</th>
-<th>備考</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Email</td>
-<td><a href="mailto:training@opswat.local">training@opswat.local</a></td>
-<td></td>
-</tr>
-<tr>
-<td>First name</td>
-<td>opswat</td>
-<td></td>
-</tr>
-<tr>
-<td>Last name</td>
-<td>opswat</td>
-<td></td>
-</tr>
-<tr>
-<td>Username</td>
-<td>opswat</td>
-<td></td>
-</tr>
-<tr>
-<td>Password</td>
-<td>Opswat1234567!</td>
-<td></td>
-</tr>
-<tr>
-<td>Confirm password</td>
-<td>Opswat1234567!</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</li>
+<li>前の章で接続したトレーニング用仮想デスクトップに接続およびログインします。</li>
+<li>ファイルエクスプローラ等から「C:\OPSWAT_Training\python-3.12.4-amd64.exe」右クリックし「管理者として実行」を選択します。
+<img src="/images/lab4/SE_Training_4-1_6.png" alt=""></li>
+<li>このような画面が表示されたら「はい」をクリックします。
+<img src="/images/lab4/SE_Training_4-1_7.png" alt=""></li>
+<li>「Add python.exe to PATH」を選択し「Install Now」をクリックします。
+<img src="/images/lab4/SE_Training_4-1_5.png" alt=""></li>
+<li>インストールが完了するとこのような画面が表示されるため「Close」をクリックします。
+<img src="/images/lab4/SE_Training_4-1_8.png" alt=""></li>
 </ol>
-<p>「4-1-1. MetaDefender Core のインストール」はこれで完了です。</p>
+<p>「4-1-1. Menlo ミドルウェアの事前準備」はこれで完了です。</p>
 
 
 
@@ -1131,38 +1032,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1175,10 +1044,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ja/lab4.html" title="MetaDefender Managed File Transfer (MFT)"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ja/lab4.html" title="Menlo &amp; MetaDefender Core インテグレーション事前準備"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/ja/lab4/step2.html" title="MFT接続用アカウントの作成" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/ja/lab4/step2.html" title="Menlo ミドルウェアのインストール/起動" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
