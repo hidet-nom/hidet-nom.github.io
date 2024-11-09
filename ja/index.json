@@ -53,7 +53,7 @@
 	"title": "MetaDefender Core のアップデート",
 	"tags": [],
 	"description": "",
-	"content": "この章では、MetaDefender Core の上書きアップデートを実施します。\n1-1. 【オプション】MetaDefender Core のアップデート\n1-2. 【オプション】MetaDefender Core 管理コンソールでのアップデート確認\n今回作成する環境のイメージは以下の通りです。 "
+	"content": "この章では、MetaDefender Core の上書きアップデートを実施します。\n2-1. MetaDefender Core のアップデート\n2-2. MetaDefender Core 管理コンソールでのアップデート確認\n今回作成する環境のイメージは以下の通りです。 "
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab2/step1.html",
@@ -74,14 +74,14 @@
 	"title": "MetaDefender Managed File Transfer (MFT)",
 	"tags": [],
 	"description": "",
-	"content": "この章では、Amazon WorkSpaces (Windows 2022 仮想デスクトップ)上に MetaDefender Managed File Transfer (MFT) をインストールします。\n3-1. MetaDefender Managed File Transferのインストール\n3-2. MetaDefender Managed File Transfer接続用アカウントの作成\n3-3. MetaDefender Managed File Transferの初期設定\n3-4. MetaDefender Managed File Transferへのファイルアップロード（ファイル処理送信(マルチスキャンおよび無害化(Deep CDR)))\n今回作成する環境のイメージは以下の通りです。 "
+	"content": "この章では、Amazon WorkSpaces (Windows 2022 仮想デスクトップ)上に MetaDefender Managed File Transfer (MFT) をインストールします。\n3-1. MetaDefender Managed File Transferのインストール\n3-2. MetaDefender Managed File Transfer接続用アカウントの作成\n3-3. MetaDefender Managed File Transferの初期設定\n3-4. MetaDefender Managed File Transferへのファイルアップロード（ファイル処理送信(マルチスキャンおよび無害化(Deep CDR)))\n3-5. MetaDefender Managed File TransferのWorkflow設定\n3-6. MetaDefender Managed File Transfer (MFT) to MFT同期設定\n3-7. MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認\n今回作成する環境のイメージは以下の通りです。 "
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab3/step1.html",
 	"title": "MetaDefender Managed File Transfer (MFT) のインストール",
 	"tags": [],
 	"description": "",
-	"content": "この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Managed File Transfer (MFT) をインストールします。\n3-1-1. MetaDefender Managed File Transfer (MFT) のインストール 前の章で接続したトレーニング用仮想デスクトップにアクセスします。 ファイルエクスプローラ等から「C:\\OPSWAT_Training\\metadefender-managed-file-transfer_3.8.0.0.exe」を起動します。 「I agree to the lizense terms and conditions」にチェックし、「Install」をクリックします。 このような画面が表示されたら「はい」をクリックします。次の画面が表示されるまで数分待ちます。 「Microsoft SQL Server Express LocalDB」を選択し「Next」をクリックします。 「はい」をクリックします。 数分待った後、「Launch」をクリックします。 「Continue」をクリックします。 下の表に従って「Email」「First name」「Last name」「Username」「Password」「Confirm password」を入力し、「Create」をクリックします。 項目 入力内容 備考 Email training@opswat.local First name opswat Last name opswat Username opswat Password Opswat!23456 Confirm password Opswat!23456 「3-1-1. MetaDefender Core のインストール」はこれで完了です。\n"
+	"content": "この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Managed File Transfer (MFT) をインストールします。\n3-1-1. MetaDefender Managed File Transfer (MFT) のインストール 前の章で接続したトレーニング用仮想デスクトップにアクセスします。 ファイルエクスプローラ等から「C:\\OPSWAT_Training\\metadefender-managed-file-transfer_3.8.0.0.exe」を起動します。 「I agree to the lizense terms and conditions」にチェックし、「Install」をクリックします。 このような画面が表示されたら「はい」をクリックします。 「No(recommended)」を選択し「Next」をクリックします。 「Microsoft SQL Server Express LocalDB」を選択し「Next」をクリックします。 「はい」をクリックします。次の画面が表示されるまで数分待ちます。\n数分待った後、「Launch」をクリックします。 「Continue」をクリックします。 下の表に従って「Email」「First name」「Last name」「Username」「Password」「Confirm password」を入力し、「Create」をクリックします。 項目 入力内容 備考 Email training@opswat.local First name opswat Last name opswat Username opswat Password Opswat!23456 Confirm password Opswat!23456 「3-1-1. MetaDefender Core のインストール」はこれで完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab3/step2.html",
@@ -95,7 +95,7 @@
 	"title": "MetaDefender Managed File Transfer (MFT) の初期設定",
 	"tags": [],
 	"description": "",
-	"content": "この章では、MetaDefender Managed File Transfer (MFT) 初期設定を行います。\n3-3-1. MetaDefender Managed File Transfer (MFT) の初期設定 デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23456 左ペインの「Settings」「Security」「License」タブを選択し「Activate」をクリックします。 「sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd」を入力し「Activate online」をクリックします。 このような画面になるのを確認します。 左ペインの「Settings」「Integrations」を選択し右側にある「…」「Edit MetaDefender Core Settings」をクリックします。 下の表の項目を入力し、MetaDefender CoreのMFTユーザー（「3-2-1 MFT接続用アカウントの作成」で取得した）のAPI Keyをコピーし「API Key」へ入力後、「Update」をクリックします。 項目 入力内容 備考 Address http://localhost:8008/ API Key 「2-2-1 MFT接続用アカウントの作成」で作成したmftユーザーのAPI キー User agent mft 「File Processing」が「Enabled」になったのを確認します。 左ペインの「Settings」「Global Settings」「Language」を選択し「Japanese」を選択「Update」をクリックします。 「3-3-1. MetaDefender Managed File Transfer (MFT) 初期設定」はこれで完了です。\n"
+	"content": "この章では、MetaDefender Managed File Transfer (MFT) 初期設定を行います。\n3-3-1. MetaDefender Managed File Transfer (MFT) の初期設定 デスクトップショートカットの「MetaDefender Managed File Transfer」をクリックします。 MetaDefender Managed File Transfer管理コンソールに以下の表に従って入力し、「Sign In」をクリックします。 項目 入力内容 備考 Username opswat Password Opswat!23456 左ペインの「Settings」「Security」「License」タブを選択し「Activate」をクリックします。 「sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd」を入力し「Activate online」をクリックします。 このような画面になるのを確認します。 左ペインの「Settings」「Integrations」を選択し右側にある「…」「Edit MetaDefender Core Settings」をクリックします。 下の表の項目を入力し、MetaDefender CoreのMFTユーザー（「3-2-1 MFT接続用アカウントの作成」で取得した）のAPI Keyをコピーし「API Key」へ入力後、「Save Changes」をクリックします。 項目 入力内容 備考 Address http://localhost:8008/ API Key 「2-2-1 MFT接続用アカウントの作成」で作成したmftユーザーのAPI キー User agent mft 「File Processing」が「Enabled」になったのを確認します。 左ペインの「Settings」「Global Settings」「Language」を選択し「Japanese」を選択「Update」をクリックします。 「3-3-1. MetaDefender Managed File Transfer (MFT) 初期設定」はこれで完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab3/step4.html",
@@ -109,7 +109,7 @@
 	"title": "MetaDefender Managed File Transfer (MFT) 用Workflow設定",
 	"tags": [],
 	"description": "",
-	"content": "この章では、MetaDefender Managed File Transfer (MFT) 用Workflow設定を行います。\n3-5-1. MetaDefender Managed File Transfer (MFT) 用Workflow設定を行います。 MetaDefender Core 管理コンソールへのログオンします。Webブラウザから「http://localhost:8008」へ接続します。 またはデスクトップショートカットの「MetaDefender Core」をダブルクリックします。 ログイン後、左ペインの「Inventory」を展開し「Modules」「Adaptive Sandbox」をクリックします。 下へスクロールし「Address」「Edit」クリック後、「https://demo01.workspaces.tokyo:10244」を入力し、チェックボタンをクリックします。 項目 入力内容 備考 Address https://demo01.workspaces.tokyo:10244 下へスクロールし「API Key」「Edit」クリック後、「O6JqahyLIQt14tBobToimzhWMt5K-Z9DvnXFESrn」を入力し、チェックボタンをクリックします。 項目 入力内容 備考 API Key O6JqahyLIQt14tBobToimzhWMt5K-Z9DvnXFESrn 画面右上の「Save changes」をクリックします。 左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「MetaDefender Vault」をクリックします。 「Deep CDR」タブをクリックします。その後、「Enable Deep CDR」を「Status：Active」にします。 「Status：Active」と表示されていることを確認し、下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。 「Enable for all file types」をチェックし、「OK」をクリックします。 「Advanced configuration」を展開し、「Include Processed Objects」および「Analysis mode」をチェックします。 「Adaptive Sandbox」タブをクリックします。その後、「Enable Adaptive Sandbox」を「Status：Active」にします。 そのまま画面を下へスクロールし「Engine result[s] filtering」「Enable for AV scan result[s]」に「No Threat found」を追加します。 画面右上の「Save changes」をクリックします。 MetaDefender Managed File Transfer 管理コンソールへのログオンします。Webブラウザから「http://localhost:8010」へ接続します。 またはデスクトップショートカットの「MetaDefender Managed File Transfer」をダブルクリックします。 左ペインの「Settings」「Integrations」を選択し右側にある「…」「MetaDefender Core の設定を編集」をクリックします。 下の表の項目を入力し、「デフォルトのワークフロー」を「MetaDefender Vault」へ変更後、「変更を保存」をクリックします。 項目 入力内容 備考 デフォルトのワークフロー MetaDefender Vault 「3-5-1. MetaDefender Managed File Transfer (MFT) 用Workflow設定」はこれで完了です。\n"
+	"content": "この章では、MetaDefender Managed File Transfer (MFT) 用Workflow設定を行います。\n今回作成する環境のイメージは以下の通りです。 3-5-1. MetaDefender Managed File Transfer (MFT) 用Workflow設定を行います。 MetaDefender Core 管理コンソールへのログオンします。Webブラウザから「http://localhost:8008」へ接続します。 またはデスクトップショートカットの「MetaDefender Core」をダブルクリックします。 ログイン後、左ペインの「Inventory」を展開し「Modules」「Adaptive Sandbox」をクリックします。 下へスクロールし「Address」「Edit」クリック後、「https://demo01.workspaces.tokyo:10244」を入力し、チェックボタンをクリックします。 項目 入力内容 備考 Address https://demo01.workspaces.tokyo:10244 下へスクロールし「API Key」「Edit」クリック後、「O6JqahyLIQt14tBobToimzhWMt5K-Z9DvnXFESrn」を入力し、チェックボタンをクリックします。 項目 入力内容 備考 API Key O6JqahyLIQt14tBobToimzhWMt5K-Z9DvnXFESrn 画面右上の「Save changes」をクリックします。 左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「MetaDefender Vault」をクリックします。 「General」タブをクリックします。下へスクロールし、「Restrictions」「Limit to specified user agent」を「mft」に変更します。 「Deep CDR」タブをクリックします。その後、「Enable Deep CDR」を「Status：Active」にします。 「Status：Active」と表示されていることを確認し、下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。 「Enable for all file types」をチェックし、「OK」をクリックします。 「Advanced configuration」を展開し、「Include Processed Objects」および「Analysis mode」をチェックします。 「Adaptive Sandbox」タブをクリックします。その後、「Enable Adaptive Sandbox」を「Status：Active」にします。 そのまま画面を下へスクロールし「Engine result[s] filtering」「Enable for AV scan result[s]」に「No Threat found」を追加します。 画面右上の「Save changes」をクリックします。 MetaDefender Managed File Transfer 管理コンソールへのログオンします。Webブラウザから「http://localhost:8010」へ接続します。 またはデスクトップショートカットの「MetaDefender Managed File Transfer」をダブルクリックします。 左ペインの「設定」「統合」を選択し右側にある「…」「MetaDefender Core の設定を編集」をクリックします。 下の表の項目を入力し、「デフォルトのワークフロー」を「MetaDefender Vault」へ変更後、「変更を保存」をクリックします。 項目 入力内容 備考 デフォルトのワークフロー MetaDefender Vault 「3-5-1. MetaDefender Managed File Transfer (MFT) 用Workflow設定」はこれで完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab3/step6.html",
@@ -117,6 +117,13 @@
 	"tags": [],
 	"description": "",
 	"content": "この章では、MetaDefender Managed File Transfer (MFT) to MFT 同期設定を行います。\n3-6-1. MetaDefender Managed File Transfer (MFT) to MFT 同期設定を行います。 MetaDefender Managed File Transfer 管理コンソールへのログオンします。Webブラウザから「http://localhost:8010」へ接続します。 またはデスクトップショートカットの「MetaDefender Managed File Transfer」をダブルクリックします。 ログイン後、左ペインの「設定」を展開し「統合」「MFTからMFT」タブをクリックします。 「ミラーリング有効化」を有効にした後、「転送ポリシー」を「許可されたファイルのみ転送」に、「ターゲット名」「MFTtoMFT」、「REST API」「http://demo01.workspaces.tokyo:10245/vault_rest」、「APIキー」「3VArjGEvzNv788GLGivL5qBvZu9gcL」を入力し、「更新」ボタンをクリックします。 項目 入力内容 備考 転送ポリシー 許可されたファイルのみ転送 ターゲット名 MFTtoMFT REST URL http://demo01.workspaces.tokyo:10245/vault_rest APIキー 3VArjGEvzNv788GLGivL5qBvZu9gcL 「3-6-1. MetaDefender Managed File Transfer (MFT) to MFT 同期設定」はこれで完了です。\n"
+},
+{
+	"uri": "https://hidet-nom.github.io/ja/lab3/step7.html",
+	"title": "MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認",
+	"tags": [],
+	"description": "",
+	"content": "この章では、MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認を行います。\n3-7-1. MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認を行います。 ファイルエクスプローラ等から「C:\\OPSWAT_Training\\demo files」にある「000OPSWAT_DeepCDR.pptx」と「demo.pdf」をコピーし、その後「000OPSWAT_DeepCDR_XX(XXは担当番号).pptx」と「demo_XX(XXは担当番号).pdf」にファイル名を変更します。 MetaDefender Managed File Transfer 管理コンソールへのログオンします。Webブラウザから「http://localhost:8010」へ接続します。 またはデスクトップショートカットの「MetaDefender Managed File Transfer」をダブルクリックします。 左ペインの「概要」「個人ファイル」を選択し「ファイルをアップロード」をクリックします。 「ファイルを追加」をクリックします。 アドレスバーに「C:\\OPSWAT_Training\\demo files」と入力し「000OPSWAT_DeepCDR_XX(XXは担当番号).pptx」と「demo_XX(XXは担当番号).pdf」選択後「開く」をクリックします。 「アップロード」をクリックします。状態が変わるまで一分ほど待ちます。 ファイル名をクリックし詳細なレポートを確認します。Workflowの変更により「DEEP CDR」が「SANITIZATION SKIPPED」、「サンドボックス」が「脅威は検知されませんでした」となっていることが確認できます。 MetaDefender Core管理コンソールにログインし、左ペインの「History」「Processing」を選択しmftユーザーから送られてきた処理を確認します。 オンプレミス環境にあるMetaDefender Sandbox 管理コンソールへのログオンします。Webブラウザから「https://demo01.workspaces.tokyo:10244/」へ接続し「training@opswat.com」「Opswat!23456」でログオンします。 画面上部中央あたりの「REPORTS」をクリックします。 「000OPSWAT_DeepCDR_XX(XXは担当番号).pptx」や「demo_XX(XXは担当番号).pdf」をクリックしレポート詳細を確認します。 「3-7-1. MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認」はこれで完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab4.html",
@@ -138,6 +145,27 @@
 	"tags": [],
 	"description": "",
 	"content": "この章では、Menlo ミドルウェアのインストール/起動を行います。\n4-2-1. Menlo ミドルウェアのインストール/起動 仮想デスクトップへのログオンします。デスクトップ画面左下のWindowsアイコンを右クリックし、「Windows PowerShell(管理者)」をクリックします。 「cd C:\\OPSWAT_Training」「git clone https://github.com/OPSWAT/metadefender-menlo-integration」を実行します。\nPS cd C:\\OPSWAT_Training PS git clone https://github.com/OPSWAT/metadefender-menlo-integration 「C:\\OPSWAT_Training\\metadefender-menlo-integration」が作成されMenlo ミドルウェアがクローンされたことを確認します。 「pip install git+https://github.com/dpkp/kafka-python.git」を実行します。 PS pip install git+https://github.com/dpkp/kafka-python.git 「cd metadefender-menlo-integration」「pip install -r requirements.txt」を実行します。 PS cd metadefender-menlo-integration PS pip install git+https://github.com/dpkp/kafka-python.git 必要に応じて「config.yml」をテキストエディタで編集し、編集後保存します。 「python -m metadefender_menlo」を実行します。下のような画面になれば起動は成功です。 「4-2-1. Menlo ミドルウェアのインストール/起動」はこれで完了です。\n"
+},
+{
+	"uri": "https://hidet-nom.github.io/ja/lab5.html",
+	"title": "MetaDefender Secure Storage &amp; Box インテグレーション",
+	"tags": [],
+	"description": "",
+	"content": "この章では、Box連携するためのMetaDefender Secure Storage設定を行います。\n5-1. MetaDefender Secure Storage \u0026amp; Box 連携設定\n5-2. Box へのファイル配置（ユーザー操作）\n今回作成する環境のイメージは以下の通りです。 "
+},
+{
+	"uri": "https://hidet-nom.github.io/ja/lab5/step1.html",
+	"title": "MetaDefender Secure Storage &amp; Box 連携設定",
+	"tags": [],
+	"description": "",
+	"content": "Box連携するためのMetaDefender Secure Storage設定を行います。\n5-1-1. MetaDefender Secure Storage \u0026amp; Box 連携設定 前の章で接続したトレーニング用仮想デスクトップに接続およびログインします。 Webブラウザから「http://demo01.workspaces.tokyo:10246/」へ接続します。 「Username or Email」に「mdss」、「Password」に「Opswat!23456」を入力し「Sign In」をクリックします 左ペイン「Settings」を選択し、右上の「+Add Core Scan Pool」をクリックします。 「Name」に「xx（xxは担当番号） Core Scan Pool」を入力し「Add」をクリックします 今作成した「xx（xxは担当番号） Core Scan Pool」の右上にある「…」をクリックし最後に「View Details」をクリックします 「xx（xxは担当番号） Core Scan Pool」の右上にある「+ Add Corew Scan Instance」をクリックします 「Url」に「http://10.128.32.202:8008/」を入力し「Add」をクリックします Webブラウザから「http://demo01.workspaces.tokyo:10241/」へ接続し「iuzoLjLF#BuB」でゲストログイン後、「BOX_1005240772_m948q3jt_config.json」をダウンロードします。 左ペイン「Storage units」を選択し、右上の「+Add Box Storage」をクリックします。 「Storage Name」に「xx（xxは担当番号） Storage Unit」、「Credentials」に先にダウンロードした「BOX_1005240772_m948q3jt_config.json」を選択、 「A specific user or custom app」選択後、「User or Custom App Name」に「hidetaka.nomura@opswat.com」入力、 「Folder Path (Optional)」に「すべてのファイル/202411Training_MDSS_EXTERNAL/OPSWATxx（xxは担当番号）」入力後最後に「Add」クリックします 「5-1-1. MetaDefender Secure Storage \u0026amp; Box 連携設定」はこれで完了です。\n"
+},
+{
+	"uri": "https://hidet-nom.github.io/ja/lab5/step2.html",
+	"title": "Menlo ミドルウェアのインストール/起動",
+	"tags": [],
+	"description": "",
+	"content": "この章では、Menlo ミドルウェアのインストール/起動を行います。\n5-2-1. Menlo ミドルウェアのインストール/起動 仮想デスクトップへのログオンします。デスクトップ画面左下のWindowsアイコンを右クリックし、「Windows PowerShell(管理者)」をクリックします。 「cd C:\\OPSWAT_Training」「git clone https://github.com/OPSWAT/metadefender-menlo-integration」を実行します。\nPS cd C:\\OPSWAT_Training PS git clone https://github.com/OPSWAT/metadefender-menlo-integration 「C:\\OPSWAT_Training\\metadefender-menlo-integration」が作成されMenlo ミドルウェアがクローンされたことを確認します。 「pip install git+https://github.com/dpkp/kafka-python.git」を実行します。 PS pip install git+https://github.com/dpkp/kafka-python.git 「cd metadefender-menlo-integration」「pip install -r requirements.txt」を実行します。 PS cd metadefender-menlo-integration PS pip install git+https://github.com/dpkp/kafka-python.git 必要に応じて「config.yml」をテキストエディタで編集し、編集後保存します。 「python -m metadefender_menlo」を実行します。下のような画面になれば起動は成功です。 「5-2-1. Menlo ミドルウェアのインストール/起動」はこれで完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/categories.html",

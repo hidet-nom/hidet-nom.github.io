@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 <link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 
-  <title>MetaDefender Managed File Transfer (MFT) 用Workflow設定 :: MetaDefender Core ハンズオン</title>
+  <title>MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認 :: MetaDefender Core ハンズオン</title>
 
   
   <link href="/css/nucleus.css" rel="stylesheet">
@@ -45,7 +45,7 @@
   
 </head>
 
-<body class="" data-url="/ja/lab3/step5.html">
+<body class="" data-url="/ja/lab3/step7.html">
   <nav id="sidebar" class="">
 
 
@@ -450,7 +450,7 @@
     
     <li data-nav-id="/ja/lab3/step5.html" title="MetaDefender Managed File Transfer (MFT) 用Workflow設定" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/ja/lab3/step5.html">
@@ -498,7 +498,7 @@
     
     <li data-nav-id="/ja/lab3/step7.html" title="MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/ja/lab3/step7.html">
@@ -736,7 +736,7 @@
           
           
           
-          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab3.html'>MetaDefender Managed File Transfer (MFT)</a> > MetaDefender Managed File Transfer (MFT) 用Workflow設定
+          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab3.html'>MetaDefender Managed File Transfer (MFT)</a> > MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認
           
           
           
@@ -752,7 +752,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#3-5-1-metadefender-managed-file-transfer-mft--用workflow設定を行います">3-5-1. MetaDefender Managed File Transfer (MFT)  用Workflow設定を行います。</a></li>
+        <li><a href="#3-7-1-metadefender-managed-file-transfer-mft-to-mft-ユーザー操作deep-cdr分析モードの確認を行います">3-7-1. MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認を行います。</a></li>
       </ul>
     </li>
   </ul>
@@ -767,106 +767,18 @@
 
       
         <div id="body-inner">
-          <h1>MetaDefender Managed File Transfer (MFT) 用Workflow設定</h1>
+          <h1>MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認</h1>
           
           
 
 
 
-	<p>この章では、MetaDefender Managed File Transfer (MFT)  用Workflow設定を行います。</p>
-<p>今回作成する環境のイメージは以下の通りです。
-<img src="/images/lab3/SE_Training_3-5_004.png" alt=""></p>
-<h3 id="3-5-1-metadefender-managed-file-transfer-mft--用workflow設定を行います">3-5-1. MetaDefender Managed File Transfer (MFT)  用Workflow設定を行います。</h3>
+	<p>この章では、MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認を行います。</p>
+<h3 id="3-7-1-metadefender-managed-file-transfer-mft-to-mft-ユーザー操作deep-cdr分析モードの確認を行います">3-7-1. MetaDefender Managed File Transfer (MFT) to MFT ユーザー操作、Deep CDR分析モードの確認を行います。</h3>
 <ol>
 <li>
-<p>MetaDefender Core 管理コンソールへのログオンします。Webブラウザから「http://localhost:8008」へ接続します。
-またはデスクトップショートカットの「MetaDefender Core」をダブルクリックします。
-<img src="/images/lab2/Kiosk000-01.PNG" alt=""></p>
-</li>
-<li>
-<p>ログイン後、左ペインの「Inventory」を展開し「Modules」「Adaptive Sandbox」をクリックします。
-<img src="/images/lab3/1103_SE_Training_3-5_001.png" alt=""></p>
-</li>
-<li>
-<p>下へスクロールし「Address」「Edit」クリック後、「https://demo01.workspaces.tokyo:10244」を入力し、チェックボタンをクリックします。
-<img src="/images/lab3/1103_SE_Training_3-5_002.png" alt=""></p>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>入力内容</th>
-<th>備考</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Address</td>
-<td><a href="https://demo01.workspaces.tokyo:10244">https://demo01.workspaces.tokyo:10244</a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>下へスクロールし「API Key」「Edit」クリック後、「O6JqahyLIQt14tBobToimzhWMt5K-Z9DvnXFESrn」を入力し、チェックボタンをクリックします。
-<img src="/images/lab3/1103_SE_Training_3-5_003.png" alt=""></p>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>入力内容</th>
-<th>備考</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>API Key</td>
-<td>O6JqahyLIQt14tBobToimzhWMt5K-Z9DvnXFESrn</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>画面右上の「Save changes」をクリックします。
-<img src="/images/lab3/1103_SE_Training_3-5_004.png" alt=""></p>
-</li>
-<li>
-<p>左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「MetaDefender Vault」をクリックします。
-<img src="/images/lab3/1103_SE_Training_3-5_6.png" alt=""></p>
-</li>
-<li>
-<p>「General」タブをクリックします。下へスクロールし、「Restrictions」「Limit to specified user agent」を「mft」に変更します。
-<img src="/images/lab3/1103_SE_Training_3-5_7.png" alt="">
-<img src="/images/lab3/1103_SE_Training_3-5_8.png" alt=""></p>
-</li>
-<li>
-<p>「Deep CDR」タブをクリックします。その後、「Enable Deep CDR」を「Status：Active」にします。
-<img src="/images/lab3/1103_SE_Training_3-5_5-1.png" alt=""></p>
-</li>
-<li>
-<p>「Status：Active」と表示されていることを確認し、下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。
-<img src="/images/lab1/1-1-3_mdc10-2.png" alt=""></p>
-</li>
-<li>
-<p>「Enable for all file types」をチェックし、「OK」をクリックします。
-<img src="/images/lab1/1-1-3_mdc11-2.png" alt=""></p>
-</li>
-<li>
-<p>「Advanced configuration」を展開し、「Include Processed Objects」および「Analysis mode」をチェックします。
-<img src="/images/lab3/1103_SE_Training_3-5_7.png" alt=""></p>
-</li>
-<li>
-<p>「Adaptive Sandbox」タブをクリックします。その後、「Enable Adaptive Sandbox」を「Status：Active」にします。
-<img src="/images/lab3/1103_SE_Training_3-5_8.png" alt=""></p>
-</li>
-<li>
-<p>そのまま画面を下へスクロールし「Engine result[s] filtering」「Enable for AV scan result[s]」に「No Threat found」を追加します。
-<img src="/images/lab3/1103_SE_Training_3-5_9.png" alt=""></p>
-</li>
-<li>
-<p>画面右上の「Save changes」をクリックします。
-<img src="/images/lab1/1-1-3_mdc12-2.png" alt=""></p>
+<p>ファイルエクスプローラ等から「C:\OPSWAT_Training\demo files」にある「000OPSWAT_DeepCDR.pptx」と「demo.pdf」をコピーし、その後「000OPSWAT_DeepCDR_XX(XXは担当番号).pptx」と「demo_XX(XXは担当番号).pdf」にファイル名を変更します。
+<img src="/images/lab3/SE_Training_3-7_1.png" alt=""></p>
 </li>
 <li>
 <p>MetaDefender Managed File Transfer 管理コンソールへのログオンします。Webブラウザから「http://localhost:8010」へ接続します。
@@ -874,31 +786,45 @@
 <img src="/images/lab3/1103_SE_Training_3-5_10.png" alt=""></p>
 </li>
 <li>
-<p>左ペインの「設定」「統合」を選択し右側にある「…」「MetaDefender Core の設定を編集」をクリックします。
-<img src="/images/lab3/1103_SE_Training_3-5_11.png" alt=""></p>
+<p>左ペインの「概要」「個人ファイル」を選択し「ファイルをアップロード」をクリックします。
+<img src="/images/lab2/Kiosk007.PNG" alt=""></p>
 </li>
 <li>
-<p>下の表の項目を入力し、「デフォルトのワークフロー」を「MetaDefender Vault」へ変更後、「変更を保存」をクリックします。
-<img src="/images/lab3/1103_SE_Training_3-5_12.png" alt=""></p>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>入力内容</th>
-<th>備考</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>デフォルトのワークフロー</td>
-<td>MetaDefender Vault</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+<p>「ファイルを追加」をクリックします。
+<img src="/images/lab2/Kiosk008.PNG" alt=""></p>
+</li>
+<li>
+<p>アドレスバーに「C:\OPSWAT_Training\demo files」と入力し「000OPSWAT_DeepCDR_XX(XXは担当番号).pptx」と「demo_XX(XXは担当番号).pdf」選択後「開く」をクリックします。
+<img src="/images/lab2/Kiosk009.PNG" alt=""></p>
+</li>
+<li>
+<p>「アップロード」をクリックします。状態が変わるまで一分ほど待ちます。
+<img src="/images/lab3/SE_Training_3-7_2.png" alt="">
+<img src="/images/lab3/SE_Training_3-7_3.png" alt=""></p>
+</li>
+<li>
+<p>ファイル名をクリックし詳細なレポートを確認します。Workflowの変更により「DEEP CDR」が「SANITIZATION SKIPPED」、「サンドボックス」が「脅威は検知されませんでした」となっていることが確認できます。
+<img src="/images/lab3/SE_Training_3-7_4.png" alt="">
+<img src="/images/lab3/SE_Training_3-7_5.png" alt=""></p>
+</li>
+<li>
+<p>MetaDefender Core管理コンソールにログインし、左ペインの「History」「Processing」を選択しmftユーザーから送られてきた処理を確認します。
+<img src="/images/lab3/SE_Training_3-7_6.png" alt=""></p>
+</li>
+<li>
+<p>オンプレミス環境にあるMetaDefender Sandbox 管理コンソールへのログオンします。Webブラウザから「https://demo01.workspaces.tokyo:10244/」へ接続し「training@opswat.com」「Opswat!23456」でログオンします。
+<img src="/images/lab3/SE_Training_3-7_7.png" alt=""></p>
+</li>
+<li>
+<p>画面上部中央あたりの「REPORTS」をクリックします。
+<img src="/images/lab3/SE_Training_3-7_8.png" alt=""></p>
+</li>
+<li>
+<p>「000OPSWAT_DeepCDR_XX(XXは担当番号).pptx」や「demo_XX(XXは担当番号).pdf」をクリックしレポート詳細を確認します。
+<img src="/images/lab3/SE_Training_3-7_9.png" alt=""></p>
 </li>
 </ol>
-<p>「3-5-1. MetaDefender Managed File Transfer (MFT) 用Workflow設定」はこれで完了です。</p>
+<p>「3-7-1. MetaDefender Managed File Transfer (MFT)  to MFT ユーザー操作、Deep CDR分析モードの確認」はこれで完了です。</p>
 
 
 
@@ -1169,26 +1095,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -1216,6 +1122,23 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1223,6 +1146,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -1328,10 +1254,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ja/lab3/step4.html" title="MetaDefender Managed File Transfer (MFT) へのファイルアップロード"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ja/lab3/step6.html" title="MetaDefender Managed File Transfer (MFT)   to MFT 同期設定"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/ja/lab3/step6.html" title="MetaDefender Managed File Transfer (MFT)   to MFT 同期設定" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/ja/lab4.html" title="Menlo &amp; MetaDefender Core インテグレーション" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
