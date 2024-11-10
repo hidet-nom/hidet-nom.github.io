@@ -45,7 +45,7 @@
   
 </head>
 
-<body class="" data-url="/ja/lab5/step2.html">
+<body class="" data-url="/ja/lab5/step3.html">
   <nav id="sidebar" class="">
 
 
@@ -662,7 +662,7 @@
     
     <li data-nav-id="/ja/lab5/step2.html" title="MetaDefender Secure Storage &amp; Wasabi 連携設定" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/ja/lab5/step2.html">
@@ -686,7 +686,7 @@
     
     <li data-nav-id="/ja/lab5/step3.html" title="MetaDefender Secure Storage &amp; Wasabi 連携設定" class="dd-item 
         
-        
+        active
         
         ">
       <a href="/ja/lab5/step3.html">
@@ -776,7 +776,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#5-2-1-metadefender-secure-storage--wasabi-連携設定">5-2-1. MetaDefender Secure Storage &amp; Wasabi 連携設定</a></li>
+        <li><a href="#5-3-1-metadefender-secure-storage--wasabi-連携ユーザー操作">5-3-1. MetaDefender Secure Storage &amp; Wasabi 連携ユーザー操作</a></li>
       </ul>
     </li>
   </ul>
@@ -797,206 +797,26 @@
 
 
 
-	<p>Wasabi連携するためのMetaDefender Secure Storage設定を行います。</p>
-<h3 id="5-2-1-metadefender-secure-storage--wasabi-連携設定">5-2-1. MetaDefender Secure Storage &amp; Wasabi 連携設定</h3>
+	<p>Wasabi連携後のユーザー操作を行います。</p>
+<h3 id="5-3-1-metadefender-secure-storage--wasabi-連携ユーザー操作">5-3-1. MetaDefender Secure Storage &amp; Wasabi 連携ユーザー操作</h3>
 <ol>
 <li>
-<p>監視用フォルダを指定するためSecure Storageの管理コンソール、左ペイン「Storage units」を選択し、上部中央「Object Storage」選択後、画面を下にスクロールし「Wasabi」「+Add Wasabi Storage」をクリックします。
-<img src="/images/lab5/SE_Training_5-1_10.png" alt="">
-<img src="/images/lab5/SE_Training_5-1_10-2.png" alt=""></p>
+<p><a href="https://console.wasabisys.com/login">https://console.wasabisys.com/login</a>　に接続し「hidetaka.nomura@opswat.com」「Opswat!23456」でサインインします。
+<img src="/images/lab5/SE_Training_5-1_24.png" alt=""></p>
 </li>
 <li>
-<p>下の表に従い各項目入力後、最後に「Add」クリックします</p>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>入力内容</th>
-<th>備考</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Storage Name</td>
-<td>XX(XXは担当番号) Wasabi MDSS</td>
-<td></td>
-</tr>
-<tr>
-<td>Service URL</td>
-<td><a href="http://s3.ap-northeast-1.wasabisys.com">http://s3.ap-northeast-1.wasabisys.com</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Access Key ID</td>
-<td>WA5TKNIDJ6EVWN561PM6</td>
-<td></td>
-</tr>
-<tr>
-<td>Secret Access Key</td>
-<td>6QBUoRD8hAM2cmVzahZQ3d8KCHLFOCX6dk7LL8aO</td>
-<td></td>
-</tr>
-<tr>
-<td>Bucket name</td>
-<td>mdss-external</td>
-<td></td>
-</tr>
-<tr>
-<td>Folder location (Optional)</td>
-<td>OPSWATxx(xxは担当番号)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><img src="/images/lab5/SE_Training_5-1_11.png" alt=""></p>
+<p>「バケット」「msdd-external」「OPSWATxx(xxは担当番号)」を表示します
+<img src="/images/lab5/SE_Training_5-1_21.png" alt=""></p>
 </li>
 <li>
-<p>出力用フォルダを指定するため「+Add Wasabi Storage」をクリックします。
-<img src="/images/lab5/SE_Training_5-1_12.png" alt=""></p>
-</li>
-<li>
-<p>下の表に従い各項目入力後、最後に「Add」クリックします</p>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>入力内容</th>
-<th>備考</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Storage Name</td>
-<td>XX(XXは担当番号) Wasabi MDSS Internal</td>
-<td></td>
-</tr>
-<tr>
-<td>Service URL</td>
-<td><a href="http://s3.ap-northeast-1.wasabisys.com">http://s3.ap-northeast-1.wasabisys.com</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Access Key ID</td>
-<td>WA5TKNIDJ6EVWN561PM6</td>
-<td></td>
-</tr>
-<tr>
-<td>Secret Access Key</td>
-<td>6QBUoRD8hAM2cmVzahZQ3d8KCHLFOCX6dk7LL8aO</td>
-<td></td>
-</tr>
-<tr>
-<td>Bucket name</td>
-<td>mdss-internal</td>
-<td></td>
-</tr>
-<tr>
-<td>Folder location (Optional)</td>
-<td>OPSWATxx(xxは担当番号)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><img src="/images/lab5/SE_Training_5-1_13.png" alt=""></p>
-</li>
-<li>
-<p>先ほど作成したStorage Unit「XX(XXは担当番号) Wasabi MDSS」の「…」「Remediation Actions」をクリックします
-<img src="/images/lab5/SE_Training_5-1_14.png" alt=""></p>
-</li>
-<li>
-<p>Tagタブにて「File tagging」「On」にします。
-<img src="/images/lab5/SE_Training_5-1_15.png" alt=""></p>
-</li>
-<li>
-<p>Deep CDRタブに移動し「File sanitization」「On」にします。
-<img src="/images/lab5/SE_Training_5-1_16.png" alt=""></p>
-</li>
-<li>
-<p>Move/Deleteタブに移動し「If the file is sanitized then」「Keep folder structure」にチェックし「Move file another storage unit」に「XX(XXは担当番号) Wasabi MDSS Internal」を選択します。</p>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>入力内容</th>
-<th>備考</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>If the file is sanitized then</td>
-<td>☑チェック</td>
-<td></td>
-</tr>
-<tr>
-<td>Keep folder structure</td>
-<td>☑チェック</td>
-<td></td>
-</tr>
-<tr>
-<td>Move file another storage unit</td>
-<td>XX(XXは担当番号) Wasabi MDSS Internal</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><img src="/images/lab5/SE_Training_5-1_17.png" alt=""></p>
-</li>
-<li>
-<p>Move/Deleteタブに移動し「If the file is sanitized then」「Keep folder structure」にチェックし「Move file another storage unit」に「XX(XXは担当番号) Wasabi MDSS Internal」を選択します。
-「If the file is alloweded then」「Keep folder structure」にチェックし「Move file another storage unit」に「XX(XXは担当番号) Wasabi MDSS Internal」を選択します。最後に「Save Settings」をクリックします。</p>
-<table>
-<thead>
-<tr>
-<th>項目</th>
-<th>入力内容</th>
-<th>備考</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>If the file is sanitized then</td>
-<td>☑チェック</td>
-<td></td>
-</tr>
-<tr>
-<td>Keep folder structure</td>
-<td>☑チェック</td>
-<td></td>
-</tr>
-<tr>
-<td>Move file another storage unit</td>
-<td>XX(XXは担当番号) Wasabi MDSS Internal</td>
-<td></td>
-</tr>
-<tr>
-<td>If the file is allowed then</td>
-<td>☑チェック</td>
-<td></td>
-</tr>
-<tr>
-<td>Keep folder structure</td>
-<td>☑チェック</td>
-<td></td>
-</tr>
-<tr>
-<td>Move file another storage unit</td>
-<td>XX(XXは担当番号) Wasabi MDSS Internal</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><img src="/images/lab5/SE_Training_5-1_18.png" alt=""></p>
-</li>
-<li>
-<p>「XX(XXは担当番号) Wasabi MDSS」の「Start process」をクリックします。
-<img src="/images/lab5/SE_Training_5-1_19.png" alt=""></p>
-</li>
-<li>
-<p>「Start」をクリックします。
-<img src="/images/lab5/SE_Training_5-1_20.png" alt=""></p>
+<p>「000OPSWAT_DeepCDR_XX(XXは担当番号).pptx」や「demo_XX(XXは担当番号).pdf」をアップロードします。
+<img src="/images/lab5/SE_Training_5-1_22.png" alt=""></p>
 </li>
 </ol>
-<p>「5-2-1. MetaDefender Secure Storage &amp; Wasabi 連携設定」はこれで完了です。</p>
+<p>1.「バケット」「msdd-internal」「OPSWATxx(xxは担当番号)」を表示します
+MetaDefenser Secure Storage が出力したファイルが確認できます。
+<img src="/images/lab5/SE_Training_5-1_23.png" alt=""></p>
+<p>「5-3-1. MetaDefender Secure Storage &amp; Wasabi 連携ユーザー操作」はこれで完了です。</p>
 
 
 
@@ -1399,7 +1219,6 @@
             
                 
                     
-                    
                 
                 
 
@@ -1416,8 +1235,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -1442,10 +1259,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ja/lab5/step1.html" title="MetaDefender Secure Storage &amp; Box 連携設定"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ja/lab5/step2.html" title="MetaDefender Secure Storage &amp; Wasabi 連携設定"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/ja/lab5/step3.html" title="MetaDefender Secure Storage &amp; Wasabi 連携設定" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/ja/lab1.html" title="MetaDefender Core" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

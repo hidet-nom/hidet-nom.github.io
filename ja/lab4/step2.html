@@ -660,13 +660,37 @@
  
   
     
-    <li data-nav-id="/ja/lab5/step2.html" title="Menlo ミドルウェアのインストール/起動" class="dd-item 
+    <li data-nav-id="/ja/lab5/step2.html" title="MetaDefender Secure Storage &amp; Wasabi 連携設定" class="dd-item 
         
         
         
         ">
       <a href="/ja/lab5/step2.html">
-          <b>5-2. </b>Menlo ミドルウェアのインストール/起動
+          <b>5-2. </b>MetaDefender Secure Storage &amp; Wasabi 連携設定
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/ja/lab5/step3.html" title="MetaDefender Secure Storage &amp; Wasabi 連携設定" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/ja/lab5/step3.html">
+          <b>5-3. </b>MetaDefender Secure Storage &amp; Wasabi 連携設定
           
       </a>
       
@@ -785,26 +809,26 @@
 <p><img src="/images/lab4/SE_Training_4-1_2.png" alt=""></p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>PS cd C:\OPSWAT_Training
-</span></span><span style="display:flex;"><span>PS git clone https<span style="color:#960050;background-color:#1e0010">:</span>//github.com/OPSWAT/metadefender-menlo-integration
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>cd C:\OPSWAT_Training
+</span></span><span style="display:flex;"><span>git clone https<span style="color:#960050;background-color:#1e0010">:</span>//github.com/OPSWAT/metadefender-menlo-integration
 </span></span></code></pre></div><ol>
 <li>
 <p>「C:\OPSWAT_Training\metadefender-menlo-integration」が作成されMenlo ミドルウェアがクローンされたことを確認します。
 <img src="/images/lab4/SE_Training_4-1_3.png" alt=""></p>
 </li>
 <li>
-<p>「pip install git+https://github.com/dpkp/kafka-python.git」を実行します。
-<img src="/images/lab4/SE_Training_4-1_30.png" alt=""></p>
+<p>「cd metadefender-menlo-integration」「pip install -r requirements.txt」を実行します。
+<img src="/images/lab4/SE_Training_4-1_25.png" alt="">
+<img src="/images/lab4/SE_Training_4-1_26.png" alt=""></p>
 </li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>PS pip install git+https<span style="color:#960050;background-color:#1e0010">:</span>//github.com/dpkp/kafka-python.git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>cd metadefender-menlo-integration
+</span></span><span style="display:flex;"><span>pip install pip install -r requirements.txt
 </span></span></code></pre></div><ol>
-<li>「cd metadefender-menlo-integration」「pip install -r requirements.txt」を実行します。
-<img src="/images/lab4/SE_Training_4-1_25.png" alt="">
-<img src="/images/lab4/SE_Training_4-1_26.png" alt=""></li>
+<li>「pip install git+https://github.com/dpkp/kafka-python.git」を実行します。
+<img src="/images/lab4/SE_Training_4-1_30.png" alt=""></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>PS cd metadefender-menlo-integration
-</span></span><span style="display:flex;"><span>PS pip install git+https<span style="color:#960050;background-color:#1e0010">:</span>//github.com/dpkp/kafka-python.git
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>pip install git+https<span style="color:#960050;background-color:#1e0010">:</span>//github.com/dpkp/kafka-python.git
 </span></span></code></pre></div><ol>
 <li>必要に応じて「config.yml」をテキストエディタで編集し、編集後保存します。
 <img src="/images/lab4/SE_Training_4-1_27.png" alt=""></li>
@@ -1196,6 +1220,22 @@
                     
                     
 
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
                     
                         
             
