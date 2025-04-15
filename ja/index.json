@@ -1,73 +1,66 @@
 [
 {
 	"uri": "https://hidet-nom.github.io/ja/",
-	"title": "MetaDefender Core ハンズオン",
+	"title": "MetaDefender Core / Kiosk ハンズオン",
 	"tags": [],
 	"description": "",
-	"content": "0-1. 本ドキュメントの位置づけ MetaDefender Core の導入/構築を検討している方向けハンズオンの解説資料です。本書の記載範囲については、本ガイドの範囲 に記載しています。\n0-2. 本ガイドの範囲 本ワークショップでは、以下のハンズオンを実施します。\nMetaDefender Core: OPSWATが提供するファイルセキュリティ「MetaDefender Core」について、インストール、構築、管理などの操作を体験いただくハンズオンです。\n0-3. ハンズオンの前提 今回のハンズオンでは、Amazon WorkSpaces上のWindows Server 2022 仮想デスクトップ上で作業を実施します。 Amazon WorkSpacesに接続するための、端末、ブラウザ、インターネット接続環境をご用意ください。\n0-4. 本書の対象者 本書は、MetaDefender Core環境の利用を検討いただける方を想定して作成しています。MetaDefender Coreを知らない方、MetaDefender Coreを触ったことがない方向けの入門レベルです。\n"
-},
-{
-	"uri": "https://hidet-nom.github.io/ja/lab1/step0.html",
-	"title": "Amazon WorkSpaces への接続",
-	"tags": [],
-	"description": "",
-	"content": "この章では、作業環境となるAmazon WorkSpacesへ接続します。\n1-0-1. Amazon WorkSpacesへのログイン 払い出されたユーザIDを使用してWorkSpaces(Windows 2022 仮想デスクトップ)環境に接続します。\nトレーニング用PCのブラウザを起動し、WorkSpacesにアクセスします。 https://ap-northeast-1.webclient.amazonworkspaces.com/login\n「Registration code」に「wsnrt+W2CWM2」を入力し、「Register」をクリックします。 「Sign in」をクリックします。 「ユーザー」には、割り当てられた「ユーザ名」「パスワード」を入力し、「Sign in」をクリックします。 ログインに必要な情報 内容 ユーザー opswatXX (XXは割当番号) パスワード Opswat!XX (XXは割当番号) 下のような画面が表示されればトレーニング用仮想デスクトップへの接続は完了です。 "
+	"content": "0-1. 本ドキュメントの位置づけ MetaDefender Core / Kiosk の導入/構築を検討している方向けハンズオンの解説資料です。本書の記載範囲については、本ガイドの範囲 に記載しています。\n0-2. 本ガイドの範囲 本ワークショップでは、以下のハンズオンを実施します。\nMetaDefender Core / Kiosk: OPSWATが提供するファイルセキュリティ「MetaDefender Core / Kiosk」について、インストール、構築、管理などの操作を体験いただくハンズオンです。\n0-3. ハンズオンの前提 今回のハンズオンでは、Amazon WorkSpaces上のWindows Server 2022 仮想デスクトップ上で作業を実施します。 Amazon WorkSpacesに接続するための、端末、ブラウザ、インターネット接続環境をご用意ください。\n0-4. 本書の対象者 本書は、MetaDefender Core環境の利用を検討いただける方を想定して作成しています。MetaDefender Coreを知らない方、MetaDefender Coreを触ったことがない方向けの入門レベルです。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab1.html",
 	"title": "MetaDefender Core",
 	"tags": [],
 	"description": "",
-	"content": "この章では、Amazon WorkSpaces (Windows 2022 仮想デスクトップ)上に MetaDefender Core をインストールします。\n1-1. MetaDefender Coreのインストール\n1-2. MetaDefender Coreの初期設定\n1-3. MetaDefender Coreへのファイル処理送信(マルチスキャンおよび無害化(Deep CDR))\n1-4.　ファイル処理の実行\n今回作成する環境のイメージは以下の通りです。 "
+	"content": "この章では、MetaDefender Core をインストールします。\n1-1. MetaDefender Coreのインストール\n1-2. MetaDefender Coreの初期設定\n1-3. MetaDefender Coreへのファイル処理送信(マルチスキャンおよび無害化(Deep CDR))\n1-4.　ファイル処理の実行\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab1/step1.html",
 	"title": "MetaDefender Coreのインストール",
 	"tags": [],
 	"description": "",
-	"content": "この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Coreをインストールします。\n1-1-1. MetaDefender Core のインストール 前の章で接続したトレーニング用仮想デスクトップにアクセスします。 デスクトップショートカットアイコン「OPSWAT_Training - ショートカット」、デスクトップ左下のWindowsアイコン右クリック後「ファイル名を指定して実行」またはファイルエクスプローラ等から「C:\\OPSWAT_Training\\ometascan-5.7.1-1-x64.msi」を起動します。 バージョンを間違えない様に気をつけてください. この章では古いバージョンの「ometascan-5.7.1-1-x64.msi」をインストールします。 「Next」をクリックします。 「I accept the terms in the License Agreement」を選択し「Next」をクリックします。 「Simple」をクリックします。 デフォルト値のまま「Next」をクリックします。 「Standalone」をクリックします。 デフォルト値のまま「Password」および「Confirm Password」に「Opswat!23」を入力し、「Next」をクリックします。 「Install」をクリックします。 このような画面が表示されたら「はい」をクリックします。次の手順まで数分かかります。(UACで表示されるmsiファイルの名前は異なる場合があります。) 「Finish」をクリックします。 「1-1-1. MetaDefender Core のインストール」はこれで完了です。\n"
+	"content": "この章では、MetaDefender Coreをインストールします。\n1-1-1. MetaDefender Core のインストール 前の章で接続したトレーニング用PCにアクセスします。\nデスクトップショートカットアイコン「OPSWAT_Training - ショートカット」、デスクトップ左下のWindowsアイコン右クリック後「ファイル名を指定して実行」またはファイルエクスプローラ等から「C:\\OPSWAT_Training\\ometascan-5.14.0-1-x64.msi」を起動します。 バージョンを間違えない様に気をつけてください. この章では現時点での最新バージョン「ometascan-5.14.0-1-x64.msi」をインストールします。 「Next」をクリックします。 「I accept the terms in the License Agreement」を選択し「Next」をクリックします。 「Simple」をクリックします。 デフォルト値のまま「Next」をクリックします。 「Standalone」をクリックします。 デフォルト値のまま「Password」および「Confirm Password」に「Opswat!23456」を入力し、「Next」をクリックします。 「Install」をクリックします。 このような画面が表示されたら「はい」をクリックします。次の手順まで数分かかります。(UACで表示されるmsiファイルの名前は異なる場合があります。) 「Finish」をクリックします。 「1-1-1. MetaDefender Core のインストール」はこれで完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab1/step2.html",
 	"title": "MetaDefender Core の初期設定",
 	"tags": [],
 	"description": "",
-	"content": "1-2-1. MetaDefender Core の初期設定 この章では、MetaDefender Core の初期設定を行います。\nデスクトップ上のMetaDefender Coreショートカットを右クリックし、「プログラムから開く」を選択します。 「Google Chrome」選択し「常にこのアプリを使う」にチェックして「OK」 をクリックします。 このような画面が表示されたら「ログインしない」 をクリックします。 「Start」 をクリックします。 「I accept the terms in the License Agreement」にチェックし「Continue」 をクリックします。 下の表示従いに入力後「Create」をクリックします。\n項目 入力内容 備考 User name opswat Display name OPSWAT Password Opswat!23 Confirm password Opswat!23 Email training@opswat.local ライセンスアクティベートを実施します。「Online activation」選択後、「Activation key」を下の様に入力後「Activate」をクリックします。\n項目 入力内容 備考 Activation key sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd 「Skip」 をクリックします。 「Yes」 をクリックします。 「Finish」 をクリックします。 これで「1-2-1. MetaDefender Core の初期設定」の初期設定は完了です。\n"
+	"content": "1-2-1. MetaDefender Core の初期設定 この章では、MetaDefender Core の初期設定を行います。\nデスクトップ左下のWindowsアイコンをクリックし、「MetaDefender Core」を選択します。 「Start」 をクリックします。 「I accept the terms in the License Agreement」にチェックし「Continue」 をクリックします。 下の表示従いに入力後「Create」をクリックします。\n項目 入力内容 備考 User name opswat Display name OPSWAT Password Opswat!23456 Confirm password Opswat!23456 Email training@opswat.local ライセンスアクティベートを実施します。「Online activation」選択後、「Activation key」を下の様に入力後「Activate」をクリックします。\n項目 入力内容 備考 Activation key sAyk-gNXp-YmnY-Esxt-bMYi-9bdF-7PXw-eEhd 「Skip」 をクリックします。 「Yes」 をクリックします。 「Finish」 をクリックします。 これで「1-2-1. MetaDefender Core の初期設定」の初期設定は完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab1/step3.html",
 	"title": "MetaDefender Coreの管理",
 	"tags": [],
 	"description": "",
-	"content": "この章では、前章でインストールしたMetaDefender Coreの設定変更や管理を行います。\n1-3-1. MetaDefender Coreの管理 Webブラウザ上のMetaDefender Core管理コンソールで「Get Started」をクリックします。 右上「Sign in」をクリックします。 「ユーザ」「パスワード」を入力し、「Sign in」をクリックします。\nログインに必要な情報 内容 ユーザ opswat パスワード Opswat!23 「Product Management Enrollment」が表示される場合は「Do not show this message at startup」チェック後、画面右上の「X」をクリックします。 左ペイン「Settings」「License」タブをクリックします。 例として下図ではライセンス有効期限が2023年12月31日まで。 MetaDefender Core for Windows 評価版、Metascan(マルチスキャン)8エンジン、Deep CDR(ファイル無害化)が有効であることが確認できます。 左ペイン「Inventory」を展開し「Modules」をクリックします。 各エンジンが最新版にアップデートされていること(インジケーターが緑)が確認できます。すべてのインジケーターが緑になるまで数分かかる場合があります。 1-3-2. ファイル無害化機能(Deep CDR)の有効化 左ペイン「Inventory」を展開し「Modules」をクリックします。 Deep CDRが最新版にアップデートされていること(インジケーターが緑)を確認します。 左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「File process」をクリックします。 「Deep CDR」タブをクリックします。その後、「Enable」をクリックします。 「Deep CDR is enabled」と表示されていることを確認し、下へスクロールし、「Output filename format」を「【無害化済】${original.basename|long}${dataid}.${converted.extension}」に変更します。 下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。 「Enable for all file types」をチェックし、「OK」をクリックします。 画面右上の「Save changes」をクリックします。 画面下方の「Advanced」をクリックします。 「Include Processed Objects」をチェックし「Save changes」クリックします。この設定により詳細なDeep CDR処理がレポートに表示されます。 以上で「1-3-1. MetaDefender Coreの管理、1-3-2. ファイル無害化機能(Deep CDR)の有効化」は完了です。\n"
+	"content": "この章では、前章でインストールしたMetaDefender Coreの設定変更や管理を行います。\n1-3-1. MetaDefender Coreの管理 Webブラウザ上のMetaDefender Core管理コンソールで「Get Started」をクリックします。 右上「Sign in」をクリックします。 「ユーザ」「パスワード」を入力し、「Sign in」をクリックします。\nログインに必要な情報 内容 ユーザ opswat パスワード Opswat!23456 「Product Management Enrollment」が表示される場合は「Do not show this message at startup」チェック後、画面右上の「X」をクリックします。 左ペイン「Settings」「License」タブをクリックします。 例として下図ではライセンス有効期限が2025年5月13日まで。 MetaDefender Core for Windows 評価版、Metascan(マルチスキャン)8エンジン、Deep CDR(ファイル無害化)が有効であることが確認できます。 左ペイン「Inventory」を展開し「Modules」をクリックします。 各エンジンが最新版にアップデートされていること(インジケーターが緑)が確認できます。すべてのインジケーターが緑になるまで数分かかる場合があります。 1-3-2. ファイル無害化機能(Deep CDR)の有効化 左ペイン「Inventory」を展開し「Modules」をクリックします。 Deep CDRが最新版にアップデートされていること(インジケーターが緑)を確認します。 左ペイン「Workflow Management」を展開し「Workflows」をクリックします。その後、「File process」をクリックします。 「Deep CDR」タブをクリックします。その後、「Active」へスライドします。 「Enable Deep CDR : Status: Active」と表示されていることを確認し、下へスクロールし、「Output filename format」を「【無害化済】${original.basename|long}${dataid}.${converted.extension}」に変更します。 下へスクロールし、「Enable for filetypes」の「Edit」をクリックします。 「Enable for all file types」をチェックし、「OK」をクリックします。 画面右上の「Save changes」をクリックします。 画面下方の「Advanced」をクリックします。 「Include Processed Objects」をチェックし「Save changes」クリックします。この設定により詳細なDeep CDR処理がレポートに表示されます。 以上で「1-3-1. MetaDefender Coreの管理、1-3-2. ファイル無害化機能(Deep CDR)の有効化」は完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab1/step4.html",
 	"title": "ファイル処理の実行",
 	"tags": [],
 	"description": "",
-	"content": "この章では、MetaDefender Coreへファイルを送信し8エンジンによるマルチスキャンやDeep CDR(ファイル無害化)を行います。\n1-4-1. ファイル処理の実行 デスクトップショートカットアイコン「OPSWAT_Training - ショートカット」、デスクトップ左下のWindowsアイコン右クリック後「ファイル名を指定して実行」またはファイルエクスプローラで「C:\\OPSWAT_Training\\demo files」フォルダを開きます。 「demo.pdf」をMetaDefender CoreのProcess a fileへドラッグ\u0026amp;ドロップします。その後、「Process」をクリックします。 レポート内の「MetaScan™」(マルチスキャン)をクリックします。 これは8つのエンジンでスキャンした結果、マルウェアやウィルスに感染してないことを示しています。「Deep CDR」をクリックします。 [1]hyperlinkを展開します。これは無害化処理の一つとしてハイパーリンクを1個削除したことを示しています。その後、「View content」をクリックします。 これはDeep CDR設定「Advanced」「Include Processed Objects」をチェックした場合に詳細なDeep CDR処理がレポートに表示されます。 ハイパーリンク「http://malware-click.in/」を削除したことを示しています。確認後、右上の「Download processed file」クリックします。 無害化処理等が行われたファイルをダウンロードし、開きます。 無害化処理(Deep CDR)によりハイパーリンクが削除されたため「www.opswatdemo.com」をクリックしても「http://malware-click.in/」へリダイレクトされません。 Chromeブラウザでオリジナルファイル「file:///C:/OPSWAT_Training/demo%20files/demo.pdf」を開き「www.opswatdemo.com」をクリックすると「http://malware-click.in/」へリダイレクトされてしまいます。 以上で「1-4-1. ファイル処理の実行」を完了します。\n"
+	"content": "この章では、MetaDefender Coreへファイルを送信し8エンジンによるマルチスキャンやDeep CDR(ファイル無害化)を行います。\n1-4-1. ファイル処理の実行 デスクトップ左下のWindowsアイコン右クリック後「ファイル名を指定して実行」またはファイルエクスプローラで「C:\\OPSWAT_Training\\demo files」フォルダを開きます。 「demo.pdf」をMetaDefender CoreのProcess a fileへドラッグ\u0026amp;ドロップします。その後、「Process」をクリックします。 レポート内の「MetaScan™」(マルチスキャン)をクリックします。 これは8つのエンジンでスキャンした結果、マルウェアやウィルスに感染してないことを示しています。「Deep CDR」をクリックします。 [1]hyperlinkを展開します。これは無害化処理の一つとしてハイパーリンクを1個削除したことを示しています。その後、「View content」をクリックします。 これはDeep CDR設定「Advanced」「Include Processed Objects」をチェックした場合に詳細なDeep CDR処理がレポートに表示されます。 ハイパーリンク「http://malware-click.in/」を削除したことを示しています。確認後、右上の「Download processed file」クリックします。 無害化処理等が行われたファイルをダウンロードし、開きます。 無害化処理(Deep CDR)によりハイパーリンクが削除されたため「www.opswatdemo.com」をクリックしても「http://malware-click.in/」へリダイレクトされません。 Chromeブラウザでオリジナルファイル「file:///C:/OPSWAT_Training/demo%20files/demo.pdf」を開き「www.opswatdemo.com」をクリックすると「http://malware-click.in/」へリダイレクトされてしまいます。 以上で「1-4-1. ファイル処理の実行」を完了します。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab2.html",
-	"title": "MetaDefender Core のアップデート",
+	"title": "MetaDefender Kiosk のインストール",
 	"tags": [],
 	"description": "",
-	"content": "この章では、MetaDefender Core の上書きアップデートを実施します。\n2-1. MetaDefender Core のアップデート\n2-2. MetaDefender Core 管理コンソールでのアップデート確認\n今回作成する環境のイメージは以下の通りです。 "
+	"content": "この章では、MetaDefender Kiosk のインストールを実施します。\n2-1. MetaDefender Kiosk のインストール\n2-2. MetaDefender Kiosk の初期設定\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab2/step1.html",
-	"title": "MetaDefender Core のアップデート",
+	"title": "MetaDefender Kiosk のインストール",
 	"tags": [],
 	"description": "",
-	"content": "この章では、MetaDefender Core 5.7.1 から 5.12.1 への上書きアップデートを実施します。\n2-1-1. MetaDefender Core 5.12.1 への上書きアップデート デスクトップショートカットアイコン「OPSWAT_Training - ショートカット」、デスクトップ左下のWindowsアイコン右クリック後「ファイル名を指定して実行」またはファイルエクスプローラで「C:\\OPSWAT_Training」フォルダを開きます。 「ometascan-5.12.1-1-x64.msi」を開きます。「Next」をクリックします。MetaDefender Core 5.7.1 から 5.12.1 への上書きアップデートのためこの章では「ometascan-5.12.1-1-x64.msi」を使用します。 「I accept the terms in the License Agreement」を選択し「Next」をクリックします。 デフォルト値のまま「Next」をクリックします。 チェックを付けずに「Next」をクリックします。 チェックを付けずに「Install」をクリックします。 このような画面が表示されたら「はい」をクリックします。UACで表示されるMSIファイル名はそれぞれ異なる場合があります。 数分程度待ちます。 この画面が表示されたら「Finish」をクリックします。 以上で「2-1-1. MetaDefender Core 5.12.1 への上書きアップデート」は完了です。\n"
+	"content": "この章では、MetaDefender Kiosk のインストールを実施します。\n2-1-1. MetaDefender Kiosk のインストール デスクトップ左下のWindowsアイコン右クリック後「ファイル名を指定して実行」またはファイルエクスプローラで「C:\\OPSWAT_Training」フォルダを開きます。 「MetaDefendef_Kiosk_4.7.5.3231.exe」を開きます。 「Start」をクリックします。 「はい」をクリックします。 このような画面が出たら数分まちます。 「Next」をクリックします。 「I accept the terms in the License Agreement」を選択し「Next」をクリックします。 デフォルト値のまま「Next」をクリックします。 「Finish」をクリックします。 「Close」をクリックします。 以上で「2-1-1. MetaDefender Kiosk のインストール」は完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab2/step2.html",
-	"title": "MetaDefender Core アップデートの確認",
+	"title": "MetaDefender Kiosk の初期設定",
 	"tags": [],
 	"description": "",
-	"content": "この章では、MetaDefender Core 5.7.1 から 5.12.1 への上書きアップデートされたかを確認します。\n2-2-1. MetaDefender Core 管理コンソールでのアップデート確認 デスクトップ上の「MetaDefender Core」ショートカットをダブルクリックします。\n右上「Sign in」をクリックします。 1.「ユーザ」「パスワード」を入力し、「Sign in」をクリックします。 ログインに必要な情報 内容 ユーザ opswat パスワード Opswat!23 左ペイン「Settings」「About」タブをクリックします。 MetaDefender Core のバージョンが5.12.1であることが確認できます。 以上で「2-2-1. MetaDefender Core 管理コンソールでのアップデート確認」は完了です。\n"
+	"content": "この章では、MetaDefender Kiosk の初期設定をします。\n2-2-1. MetaDefender Kiosk の初期設定 「MetaDefender Core」管理コンソールログインし、「User Management」をクリックします。 下記に従いそれぞれ入力し、**API Key「Generate」をクリックして、それをクリップボードにコピーしておきます。**最後に「Add」をクリックします。 項目 入力内容 備考 User name opswat Display name OPSWAT Password Opswat!23456 Confirm password Opswat!23456 Email training@opswat.local API Key 任意の文字列が生成されます Assign to roles Administrators デスクトップ画面左下Windowsアイコンから「OPSWAT」「MetaDefender Kiosk Management Condsole」をクリックします。 「Start Setup」をクリックします。 チェックして、「Continue」をクリックします。 下記に従いそれぞれ入力し、「Continue」をクリックします。 項目 入力内容 備考 User name opswat Display name OPSWAT Password Opswat!23456 Confirm password Opswat!23456 「Skip」をクリックします。 下記に従いそれぞれ入力し、「Continue」をクリックします。 項目 入力内容 備考 Online / Offline Online License Key Notes 「Finish and Continue to Page」をクリックします。 左ペイン「Configration」「Integrations」タブをクリックします。 下記に従いそれぞれ入力し、最後に「Save Updates」をクリックします。 項目 入力内容 備考 Server URL http://localhost:8008 API Key 「MetaDefender Core」管理コンソールで取得したVaultのAPIキー このページ手順2で作成したAPIキーです 左ペイン「Configration」「Kiosk UI」タブをクリックします。 「Display disclaimer screen」のチェックを外し、最後に「Save Updates」をクリックします。 左ペイン「Configration」「Language」タブをクリックします。 「Default language」を「日本語」にし、最後に「Save Updates」をクリックします。 左ペイン「Workflows」「Guest Workflow」の鉛筆アイコンをクリックします。 「User Questions」タブをクリックします。 Question「日本語」を選択、下図の様に一行だけチェックし、最後に「Save Updates」をクリックします。 「File Handling」タブをクリックします。 「Copy to Secondary Location」を選択「User media」「Wipe user media beforecopying」のチェックし、最後に「Save Updates」をクリックします。 以上で「MetaDefender Kiosk の初期設定」は完了です。\n"
 },
 {
 	"uri": "https://hidet-nom.github.io/ja/lab3.html",

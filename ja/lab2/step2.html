@@ -3,7 +3,7 @@
 <html lang="ja" class="js csstransforms3d">
 <head>
   <meta charset="utf-8">
-  <meta property="og:title" content="MetaDefender Core ハンズオン" />
+  <meta property="og:title" content="MetaDefender Core / Kisok ハンズオン" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 <link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 
-  <title>MetaDefender Core アップデートの確認 :: MetaDefender Core ハンズオン</title>
+  <title>MetaDefender Kiosk の初期設定 :: MetaDefender Core / Kisok ハンズオン</title>
 
   
   <link href="/css/nucleus.css" rel="stylesheet">
@@ -108,30 +108,6 @@
           
           
         
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/ja/lab1/step0.html" title="Amazon WorkSpaces への接続" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ja/lab1/step0.html">
-          <b>1-0. </b>Amazon WorkSpaces への接続
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
           
             
             
@@ -243,13 +219,13 @@
  
   
     
-    <li data-nav-id="/ja/lab2.html" title="MetaDefender Core のアップデート" class="dd-item 
+    <li data-nav-id="/ja/lab2.html" title="MetaDefender Kiosk のインストール" class="dd-item 
         parent
         
         
         ">
       <a href="/ja/lab2.html">
-          <b>2. </b>MetaDefender Core のアップデート
+          <b>2. </b>MetaDefender Kiosk のインストール
           
       </a>
       
@@ -270,13 +246,13 @@
  
   
     
-    <li data-nav-id="/ja/lab2/step1.html" title="MetaDefender Core のアップデート" class="dd-item 
+    <li data-nav-id="/ja/lab2/step1.html" title="MetaDefender Kiosk のインストール" class="dd-item 
         
         
         
         ">
       <a href="/ja/lab2/step1.html">
-          <b>2-1. </b>MetaDefender Core のアップデート
+          <b>2-1. </b>MetaDefender Kiosk のインストール
           
       </a>
       
@@ -294,13 +270,13 @@
  
   
     
-    <li data-nav-id="/ja/lab2/step2.html" title="MetaDefender Core アップデートの確認" class="dd-item 
+    <li data-nav-id="/ja/lab2/step2.html" title="MetaDefender Kiosk の初期設定" class="dd-item 
         
         active
         
         ">
       <a href="/ja/lab2/step2.html">
-          <b>2-2. </b>MetaDefender Core アップデートの確認
+          <b>2-2. </b>MetaDefender Kiosk の初期設定
           
       </a>
       
@@ -760,7 +736,7 @@
           
           
           
-          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab2.html'>MetaDefender Core のアップデート</a> > MetaDefender Core アップデートの確認
+          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core / Kiosk ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab2.html'>MetaDefender Kiosk のインストール</a> > MetaDefender Kiosk の初期設定
           
           
           
@@ -776,7 +752,7 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#2-2-1-metadefender-core-管理コンソールでのアップデート確認">2-2-1. MetaDefender Core 管理コンソールでのアップデート確認</a></li>
+        <li><a href="#2-2-1-metadefender-kiosk-の初期設定">2-2-1. MetaDefender Kiosk の初期設定</a></li>
       </ul>
     </li>
   </ul>
@@ -791,49 +767,207 @@
 
       
         <div id="body-inner">
-          <h1>MetaDefender Core アップデートの確認</h1>
+          <h1>MetaDefender Kiosk の初期設定</h1>
           
           
 
 
 
-	<p>この章では、MetaDefender Core 5.7.1 から 5.12.1 への上書きアップデートされたかを確認します。</p>
-<h3 id="2-2-1-metadefender-core-管理コンソールでのアップデート確認">2-2-1. MetaDefender Core 管理コンソールでのアップデート確認</h3>
+	<p>この章では、MetaDefender Kiosk の初期設定をします。</p>
+<h3 id="2-2-1-metadefender-kiosk-の初期設定">2-2-1. MetaDefender Kiosk の初期設定</h3>
 <ol>
 <li>
-<p>デスクトップ上の「MetaDefender Core」ショートカットをダブルクリックします。</p>
+<p>「MetaDefender Core」管理コンソールログインし、「User Management」をクリックします。
+<img src="/images/lab1/KioskSetting01.png" alt=""></p>
 </li>
 <li>
-<p>右上「Sign in」をクリックします。
-<img src="/images/lab1/1-1-3_mdc02.png" alt="">
-1.「ユーザ」「パスワード」を入力し、「Sign in」をクリックします。
-<img src="/images/lab1/1-1-3_mdc03.png" alt=""></p>
+<p>下記に従いそれぞれ入力し、**API Key「Generate」をクリックして、それをクリップボードにコピーしておきます。**最後に「Add」をクリックします。
+<img src="/images/lab1/KioskSetting02.png" alt="">
+<img src="/images/lab1/KioskSetting03.png" alt=""></p>
 <table>
 <thead>
 <tr>
-<th>ログインに必要な情報</th>
-<th>内容</th>
+<th>項目</th>
+<th>入力内容</th>
+<th>備考</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ユーザ</td>
+<td>User name</td>
 <td>opswat</td>
+<td></td>
 </tr>
 <tr>
-<td>パスワード</td>
-<td>Opswat!23</td>
+<td>Display name</td>
+<td>OPSWAT</td>
+<td></td>
+</tr>
+<tr>
+<td>Password</td>
+<td>Opswat!23456</td>
+<td></td>
+</tr>
+<tr>
+<td>Confirm password</td>
+<td>Opswat!23456</td>
+<td></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><a href="mailto:training@opswat.local">training@opswat.local</a></td>
+<td></td>
+</tr>
+<tr>
+<td>API Key</td>
+<td>任意の文字列が生成されます</td>
+<td></td>
+</tr>
+<tr>
+<td>Assign to roles</td>
+<td>Administrators</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </li>
 <li>
-<p>左ペイン「Settings」「About」タブをクリックします。
-MetaDefender Core のバージョンが5.12.1であることが確認できます。
-<img src="/images/lab1/SE_Training_2-2_3.png" alt=""></p>
+<p>デスクトップ画面左下Windowsアイコンから「OPSWAT」「MetaDefender Kiosk Management Condsole」をクリックします。
+<img src="/images/lab1/KioskSetting07.png" alt=""></p>
+</li>
+<li>
+<p>「Start Setup」をクリックします。
+<img src="/images/lab1/KioskSetting08.png" alt=""></p>
+</li>
+<li>
+<p>チェックして、「Continue」をクリックします。
+<img src="/images/lab1/KioskSetting09.png" alt=""></p>
+</li>
+<li>
+<p>下記に従いそれぞれ入力し、「Continue」をクリックします。
+<img src="/images/lab1/KioskSetting10.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>入力内容</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User name</td>
+<td>opswat</td>
+<td></td>
+</tr>
+<tr>
+<td>Display name</td>
+<td>OPSWAT</td>
+<td></td>
+</tr>
+<tr>
+<td>Password</td>
+<td>Opswat!23456</td>
+<td></td>
+</tr>
+<tr>
+<td>Confirm password</td>
+<td>Opswat!23456</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>「Skip」をクリックします。
+<img src="/images/lab1/KioskSetting11.png" alt=""></p>
+</li>
+<li>
+<p>下記に従いそれぞれ入力し、「Continue」をクリックします。
+<img src="/images/lab1/KioskSetting12.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>入力内容</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Online / Offline</td>
+<td>Online</td>
+<td></td>
+</tr>
+<tr>
+<td>License Key</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Notes</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>「Finish and Continue to Page」をクリックします。
+<img src="/images/lab1/KioskSetting13.png" alt=""></p>
+</li>
+<li>
+<p>左ペイン「Configration」「Integrations」タブをクリックします。
+下記に従いそれぞれ入力し、最後に「Save Updates」をクリックします。
+<img src="/images/lab1/KioskSetting06.png" alt=""></p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>入力内容</th>
+<th>備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Server URL</td>
+<td>http://localhost:8008</td>
+<td></td>
+</tr>
+<tr>
+<td>API Key</td>
+<td>「MetaDefender Core」管理コンソールで取得したVaultのAPIキー</td>
+<td>このページ手順2で作成したAPIキーです</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>左ペイン「Configration」「Kiosk UI」タブをクリックします。
+「Display disclaimer screen」のチェックを外し、最後に「Save Updates」をクリックします。
+<img src="/images/lab1/KioskSetting15.png" alt=""></p>
+</li>
+<li>
+<p>左ペイン「Configration」「Language」タブをクリックします。
+「Default language」を「日本語」にし、最後に「Save Updates」をクリックします。
+<img src="/images/lab1/KioskSetting18.png" alt=""></p>
+</li>
+<li>
+<p>左ペイン「Workflows」「Guest Workflow」の鉛筆アイコンをクリックします。
+<img src="/images/lab1/KioskSetting16.png" alt=""></p>
+</li>
+<li>
+<p>「User Questions」タブをクリックします。
+Question「日本語」を選択、下図の様に一行だけチェックし、最後に「Save Updates」をクリックします。
+<img src="/images/lab1/KioskSetting19.png" alt=""></p>
+</li>
+<li>
+<p>「File Handling」タブをクリックします。
+「Copy to Secondary Location」を選択「User media」「Wipe user media beforecopying」のチェックし、最後に「Save Updates」をクリックします。
+<img src="/images/lab1/KioskSetting17.png" alt=""></p>
 </li>
 </ol>
-<p>以上で「2-2-1. MetaDefender Core 管理コンソールでのアップデート確認」は完了です。</p>
+<p>以上で「MetaDefender Kiosk の初期設定」は完了です。</p>
 
 
 
@@ -886,22 +1020,6 @@ MetaDefender Core のバージョンが5.12.1であることが確認できま�
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1279,7 +1397,7 @@ MetaDefender Core のバージョンが5.12.1であることが確認できま�
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ja/lab2/step1.html" title="MetaDefender Core のアップデート"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ja/lab2/step1.html" title="MetaDefender Kiosk のインストール"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/ja/lab3.html" title="MetaDefender Managed File Transfer (MFT)" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>

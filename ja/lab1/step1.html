@@ -3,7 +3,7 @@
 <html lang="ja" class="js csstransforms3d">
 <head>
   <meta charset="utf-8">
-  <meta property="og:title" content="MetaDefender Core ハンズオン" />
+  <meta property="og:title" content="MetaDefender Core / Kisok ハンズオン" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -14,7 +14,7 @@
   <link rel="shortcut icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 <link rel="icon" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico" type="image/ico" />
 
-  <title>MetaDefender Coreのインストール :: MetaDefender Core ハンズオン</title>
+  <title>MetaDefender Coreのインストール :: MetaDefender Core / Kisok ハンズオン</title>
 
   
   <link href="/css/nucleus.css" rel="stylesheet">
@@ -108,30 +108,6 @@
           
           
         
-          
-            
-            
-
-
- 
-  
-    
-    <li data-nav-id="/ja/lab1/step0.html" title="Amazon WorkSpaces への接続" class="dd-item 
-        
-        
-        
-        ">
-      <a href="/ja/lab1/step0.html">
-          <b>1-0. </b>Amazon WorkSpaces への接続
-          
-      </a>
-      
-              
-    </li>
-  
- 
-
-            
           
             
             
@@ -243,13 +219,13 @@
  
   
     
-    <li data-nav-id="/ja/lab2.html" title="MetaDefender Core のアップデート" class="dd-item 
+    <li data-nav-id="/ja/lab2.html" title="MetaDefender Kiosk のインストール" class="dd-item 
         
         
         
         ">
       <a href="/ja/lab2.html">
-          <b>2. </b>MetaDefender Core のアップデート
+          <b>2. </b>MetaDefender Kiosk のインストール
           
       </a>
       
@@ -270,13 +246,13 @@
  
   
     
-    <li data-nav-id="/ja/lab2/step1.html" title="MetaDefender Core のアップデート" class="dd-item 
+    <li data-nav-id="/ja/lab2/step1.html" title="MetaDefender Kiosk のインストール" class="dd-item 
         
         
         
         ">
       <a href="/ja/lab2/step1.html">
-          <b>2-1. </b>MetaDefender Core のアップデート
+          <b>2-1. </b>MetaDefender Kiosk のインストール
           
       </a>
       
@@ -294,13 +270,13 @@
  
   
     
-    <li data-nav-id="/ja/lab2/step2.html" title="MetaDefender Core アップデートの確認" class="dd-item 
+    <li data-nav-id="/ja/lab2/step2.html" title="MetaDefender Kiosk の初期設定" class="dd-item 
         
         
         
         ">
       <a href="/ja/lab2/step2.html">
-          <b>2-2. </b>MetaDefender Core アップデートの確認
+          <b>2-2. </b>MetaDefender Kiosk の初期設定
           
       </a>
       
@@ -760,7 +736,7 @@
           
           
           
-          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab1.html'>MetaDefender Core</a> > MetaDefender Coreのインストール
+          <a href='https://hidet-nom.github.io/ja/'>MetaDefender Core / Kiosk ハンズオン</a> > <a href='https://hidet-nom.github.io/ja/lab1.html'>MetaDefender Core</a> > MetaDefender Coreのインストール
           
           
           
@@ -797,32 +773,54 @@
 
 
 
-	<p>この章では、WorkSpaces(Windows 2022 仮想デスクトップ)上にMetaDefender Coreをインストールします。</p>
+	<p>この章では、MetaDefender Coreをインストールします。</p>
 <h3 id="1-1-1-metadefender-core-のインストール">1-1-1. MetaDefender Core のインストール</h3>
 <ol>
-<li>前の章で接続したトレーニング用仮想デスクトップにアクセスします。</li>
-<li>デスクトップショートカットアイコン「OPSWAT_Training - ショートカット」、デスクトップ左下のWindowsアイコン右クリック後「ファイル名を指定して実行」またはファイルエクスプローラ等から「C:\OPSWAT_Training\ometascan-5.7.1-1-x64.msi」を起動します。
+<li>
+<p>前の章で接続したトレーニング用PCにアクセスします。</p>
+</li>
+<li>
+<p>デスクトップショートカットアイコン「OPSWAT_Training - ショートカット」、デスクトップ左下のWindowsアイコン右クリック後「ファイル名を指定して実行」またはファイルエクスプローラ等から「C:\OPSWAT_Training\ometascan-5.14.0-1-x64.msi」を起動します。
 バージョンを間違えない様に気をつけてください.
-この章では古いバージョンの「ometascan-5.7.1-1-x64.msi」をインストールします。
-<img src="/images/lab1/SE_Training_1-1_1.png" alt=""></li>
-<li>「Next」をクリックします。
-<img src="/images/lab1/1-1-1_mdc02.png" alt=""></li>
-<li>「I accept the terms in the License Agreement」を選択し「Next」をクリックします。
-<img src="/images/lab1/1-1-1_mdc03.png" alt=""></li>
-<li>「Simple」をクリックします。
-<img src="/images/lab1/1-1-1_mdc04.png" alt=""></li>
-<li>デフォルト値のまま「Next」をクリックします。
-<img src="/images/lab1/1-1-1_mdc05.png" alt=""></li>
-<li>「Standalone」をクリックします。
-<img src="/images/lab1/1-1-1_mdc06.png" alt=""></li>
-<li>デフォルト値のまま「Password」および「Confirm Password」に「Opswat!23」を入力し、「Next」をクリックします。
-<img src="/images/lab1/1-1-1_mdc07.png" alt=""></li>
-<li>「Install」をクリックします。
-<img src="/images/lab1/1-1-1_mdc08.png" alt=""></li>
-<li>このような画面が表示されたら「はい」をクリックします。次の手順まで数分かかります。(UACで表示されるmsiファイルの名前は異なる場合があります。)
-<img src="/images/lab1/1-1-5_mdc07-2.PNG" alt=""></li>
-<li>「Finish」をクリックします。
-<img src="/images/lab1/1-1-1_mdc10.png" alt=""></li>
+この章では現時点での最新バージョン「ometascan-5.14.0-1-x64.msi」をインストールします。
+<img src="/images/lab1/Kiosk01.png" alt=""></p>
+</li>
+<li>
+<p>「Next」をクリックします。
+<img src="/images/lab1/1-1-1_mdc02.png" alt=""></p>
+</li>
+<li>
+<p>「I accept the terms in the License Agreement」を選択し「Next」をクリックします。
+<img src="/images/lab1/1-1-1_mdc03.png" alt=""></p>
+</li>
+<li>
+<p>「Simple」をクリックします。
+<img src="/images/lab1/1-1-1_mdc04.png" alt=""></p>
+</li>
+<li>
+<p>デフォルト値のまま「Next」をクリックします。
+<img src="/images/lab1/1-1-1_mdc05.png" alt=""></p>
+</li>
+<li>
+<p>「Standalone」をクリックします。
+<img src="/images/lab1/1-1-1_mdc06.png" alt=""></p>
+</li>
+<li>
+<p>デフォルト値のまま「Password」および「Confirm Password」に「Opswat!23456」を入力し、「Next」をクリックします。
+<img src="/images/lab1/1-1-1_mdc07.png" alt=""></p>
+</li>
+<li>
+<p>「Install」をクリックします。
+<img src="/images/lab1/1-1-1_mdc08.png" alt=""></p>
+</li>
+<li>
+<p>このような画面が表示されたら「はい」をクリックします。次の手順まで数分かかります。(UACで表示されるmsiファイルの名前は異なる場合があります。)
+<img src="/images/lab1/1-1-5_mdc07-2.PNG" alt=""></p>
+</li>
+<li>
+<p>「Finish」をクリックします。
+<img src="/images/lab1/1-1-1_mdc10.png" alt=""></p>
+</li>
 </ol>
 <p>「1-1-1. MetaDefender Core のインストール」はこれで完了です。</p>
 
@@ -877,22 +875,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1270,7 +1252,7 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="/ja/lab1/step0.html" title="Amazon WorkSpaces への接続"> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="/ja/lab1.html" title="MetaDefender Core"> <i class="fa fa-chevron-left"></i></a>
 		
 		
 			<a class="nav nav-next" href="/ja/lab1/step2.html" title="MetaDefender Core の初期設定" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
